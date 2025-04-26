@@ -1,0 +1,159 @@
+
+
+
+
+
+
+
+Started logging.
+
+>>>
+Content-Length: 3109
+
+{"jsonrpc":"2.0","id":"1","method":"initialize","params":{"processId":12304,"clientInfo":{"name":"vscode","version":"1.96.0"},"rootPath":"C:\\Users\\рс\\AppData\\Local\\Temp\\arduino-language-server832218445\\build\\sketch","rootUri":"file:///c%3A/Users/%D1%80%D1%81/AppData/Local/Temp/arduino-language-server832218445/build/sketch","initializationOptions":{},"capabilities":{"workspace":{"applyEdit":true,"workspaceEdit":{"documentChanges":true,"resourceOperations":["create","rename","delete"],"failureHandling":"textOnlyTransactional"},"didChangeConfiguration":{"dynamicRegistration":true},"didChangeWatchedFiles":{"dynamicRegistration":true},"symbol":{"dynamicRegistration":true,"symbolKind":{"valueSet":[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26]}},"executeCommand":{"dynamicRegistration":true},"workspaceFolders":true,"configuration":true},"textDocument":{"synchronization":{"dynamicRegistration":true,"willSave":true,"willSaveWaitUntil":true,"didSave":true},"completion":{"dynamicRegistration":true,"completionItem":{"snippetSupport":true,"commitCharactersSupport":true,"documentationFormat":["markdown","plaintext"],"deprecatedSupport":true,"preselectSupport":true,"tagSupport":{"valueSet":[1]}},"completionItemKind":{"valueSet":[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25]},"contextSupport":true},"hover":{"dynamicRegistration":true,"contentFormat":["markdown","plaintext"]},"signatureHelp":{"dynamicRegistration":true,"signatureInformation":{"documentationFormat":["markdown","plaintext"],"parameterInformation":{"labelOffsetSupport":true}},"contextSupport":true},"declaration":{"dynamicRegistration":true,"linkSupport":true},"definition":{"dynamicRegistration":true,"linkSupport":true},"typeDefinition":{"dynamicRegistration":true,"linkSupport":true},"implementation":{"dynamicRegistration":true,"linkSupport":true},"references":{"dynamicRegistration":true},"documentHighlight":{"dynamicRegistration":true},"documentSymbol":{"dynamicRegistration":true,"symbolKind":{"valueSet":[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26]},"hierarchicalDocumentSymbolSupport":true},"codeAction":{"dynamicRegistration":true,"codeActionLiteralSupport":{"codeActionKind":{"valueSet":["","quickfix","refactor","refactor.extract","refactor.inline","refactor.rewrite","source","source.organizeImports"]}},"isPreferredSupport":true},"codeLens":{"dynamicRegistration":true},"documentLink":{"dynamicRegistration":true,"tooltipSupport":true},"colorProvider":{"dynamicRegistration":true},"formatting":{"dynamicRegistration":true},"rangeFormatting":{"dynamicRegistration":true},"onTypeFormatting":{"dynamicRegistration":true},"rename":{"dynamicRegistration":true,"prepareSupport":true},"publishDiagnostics":{"relatedInformation":true,"tagSupport":{"valueSet":[1,2]}},"foldingRange":{"dynamicRegistration":true,"rangeLimit":5000,"lineFoldingOnly":true},"selectionRange":{"dynamicRegistration":true}},"window":{"workDoneProgress":true}},"trace":"off","workspaceFolders":[{"uri":"file:///d%3A/ESP8266_GitHub/TermoCloud/TemoCloud","name":"TemoCloud"}]}}
+<<<
+Content-Length: 1905
+
+{"id":"1","jsonrpc":"2.0","result":{"capabilities":{"astProvider":true,"callHierarchyProvider":true,"clangdInlayHintsProvider":true,"codeActionProvider":{"codeActionKinds":["quickfix","refactor","info"]},"compilationDatabase":{"automaticReload":true},"completionProvider":{"allCommitCharacters":[" ","\t","(",")","[","]","{","}","<",">",":",";",",","+","-","/","*","%","^","&","#","?",".","=","\"","'","|"],"resolveProvider":false,"triggerCharacters":[".","<",">",":","\"","/","*"]},"declarationProvider":true,"definitionProvider":true,"documentFormattingProvider":true,"documentHighlightProvider":true,"documentLinkProvider":{"resolveProvider":false},"documentOnTypeFormattingProvider":{"firstTriggerCharacter":"\n","moreTriggerCharacter":[]},"documentRangeFormattingProvider":true,"documentSymbolProvider":true,"executeCommandProvider":{"commands":["clangd.applyFix","clangd.applyTweak"]},"hoverProvider":true,"implementationProvider":true,"memoryUsageProvider":true,"referencesProvider":true,"renameProvider":{"prepareProvider":true},"selectionRangeProvider":true,"semanticTokensProvider":{"full":{"delta":true},"legend":{"tokenModifiers":["declaration","deprecated","deduced","readonly","static","abstract","virtual","dependentName","defaultLibrary","usedAsMutableReference","functionScope","classScope","fileScope","globalScope"],"tokenTypes":["variable","variable","parameter","function","method","function","property","variable","class","interface","enum","enumMember","type","type","unknown","namespace","typeParameter","concept","type","macro","comment"]},"range":false},"signatureHelpProvider":{"triggerCharacters":["(",")","{","}","<",">",","]},"textDocumentSync":{"change":2,"openClose":true,"save":true},"typeDefinitionProvider":true,"typeHierarchyProvider":true,"workspaceSymbolProvider":true},"serverInfo":{"name":"clangd","version":"clangd version 14.0.0 windows x86_64-pc-windows-msvc"}}}
+>>>
+Content-Length: 52
+
+{"jsonrpc":"2.0","method":"initialized","params":{}}Content-Length: 1605
+
+{"jsonrpc":"2.0","method":"textDocument/didOpen","params":{"textDocument":{"uri":"file:///c%3A/Users/%D1%80%D1%81/AppData/Local/Temp/arduino-language-server832218445/build/sketch/TemoCloud.ino.cpp","languageId":"cpp","version":1,"text":"#include \u003cArduino.h\u003e\n#line 1 \"D:\\\\ESP8266_GitHub\\\\TermoCloud\\\\TemoCloud\\\\TemoCloud.ino\"\n/* 26апр25\nhttps://microkontroller.ru/esp8266-projects/podklyuchenie-datchika-temperatury-ds18b20-k-esp8266/\nПодключение датчика температуры DS18B20 к NodeMCU ESP8266\n*/\n\n#include \u003cOneWire.h\u003e\n#include \u003cDallasTemperature.h\u003e\n\n// GPIO where the DS18B20 is connected to\nconst int oneWireBus = 4;     \n\n// Setup a oneWire instance to communicate with any OneWire devices\nOneWire oneWire(oneWireBus);\n\n// Pass our oneWire reference to Dallas Temperature sensor \nDallasTemperature sensors(\u0026oneWire);\n\n#line 18 \"D:\\\\ESP8266_GitHub\\\\TermoCloud\\\\TemoCloud\\\\TemoCloud.ino\"\nvoid setup();\n#line 25 \"D:\\\\ESP8266_GitHub\\\\TermoCloud\\\\TemoCloud\\\\TemoCloud.ino\"\nvoid loop();\n#line 18 \"D:\\\\ESP8266_GitHub\\\\TermoCloud\\\\TemoCloud\\\\TemoCloud.ino\"\nvoid setup() {\n  // Start the Serial Monitor\n  Serial.begin(115200);\n  // Start the DS18B20 sensor\n  sensors.begin();\n}\n\nvoid loop() {\n  sensors.requestTemperatures(); \n  float temperatureC = sensors.getTempCByIndex(0);\n  float temperatureF = sensors.getTempFByIndex(0);\n  Serial.print(temperatureC);\n  Serial.println(\"ºC\");\n  Serial.print(temperatureF);\n  Serial.println(\"ºF\");\n  delay(5000);\n}\n"}}}Content-Length: 315
+
+{"jsonrpc":"2.0","id":"2","method":"textDocument/codeAction","params":{"textDocument":{"uri":"file:///c%3A/Users/%D1%80%D1%81/AppData/Local/Temp/arduino-language-server832218445/build/sketch/TemoCloud.ino.cpp"},"range":{"start":{"line":2,"character":0},"end":{"line":2,"character":0}},"context":{"diagnostics":[]}}}
+<<<
+Content-Length: 192
+
+{"jsonrpc":"2.0","method":"textDocument/publishDiagnostics","params":{"diagnostics":[],"uri":"file:///c:/Users/%D1%80%D1%81/AppData/Local/Temp/arduino-language-server832218445/build/.clangd"}}Content-Length: 192
+
+{"jsonrpc":"2.0","method":"textDocument/publishDiagnostics","params":{"diagnostics":[],"uri":"file:///C:/Users/%D1%80%D1%81/AppData/Local/Temp/arduino-language-server832218445/build/.clangd"}}Content-Length: 111
+
+{"id":0,"jsonrpc":"2.0","method":"window/workDoneProgress/create","params":{"token":"backgroundIndexProgress"}}
+>>>
+Content-Length: 38
+
+{"jsonrpc":"2.0","id":0,"result":null}
+<<<
+Content-Length: 143
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"begin","percentage":0,"title":"indexing"}}}Content-Length: 141
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"0/1","percentage":0}}}Content-Length: 141
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"0/2","percentage":0}}}Content-Length: 142
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"1/2","percentage":50}}}Content-Length: 142
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"1/2","percentage":50}}}Content-Length: 1173
+
+{"jsonrpc":"2.0","method":"textDocument/publishDiagnostics","params":{"diagnostics":[{"code":"drv_unknown_argument_with_suggestion","message":"Unknown argument '-mlongcalls'; did you mean '-mlong-calls'?","range":{"end":{"character":0,"line":0},"start":{"character":0,"line":0}},"relatedInformation":[],"severity":1,"source":"clang"},{"code":"drv_unknown_argument","message":"Unknown argument: '-mtext-section-literals'","range":{"end":{"character":0,"line":0},"start":{"character":0,"line":0}},"relatedInformation":[],"severity":1,"source":"clang"},{"code":"pp_file_not_found","message":"In included file: 'stddef.h' file not found","range":{"end":{"character":10,"line":0},"start":{"character":9,"line":0}},"relatedInformation":[{"location":{"range":{"end":{"character":19,"line":15},"start":{"character":9,"line":15}},"uri":"file:///C:/Users/%D1%80%D1%81/AppData/Local/Arduino15/packages/esp8266/hardware/esp8266/2.7.4/tools/sdk/libc/xtensa-lx106-elf/include/stdlib.h"},"message":"Error occurred here"}],"severity":1,"source":"clang"}],"uri":"file:///c:/Users/%D1%80%D1%81/AppData/Local/Temp/arduino-language-server832218445/build/sketch/TemoCloud.ino.cpp","version":1}}Content-Length: 38
+
+{"id":"2","jsonrpc":"2.0","result":[]}
+>>>
+Content-Length: 216
+
+{"jsonrpc":"2.0","id":"3","method":"textDocument/documentSymbol","params":{"textDocument":{"uri":"file:///c%3A/Users/%D1%80%D1%81/AppData/Local/Temp/arduino-language-server832218445/build/sketch/TemoCloud.ino.cpp"}}}
+<<<
+Content-Length: 1517
+
+{"id":"3","jsonrpc":"2.0","result":[{"detail":"const int","kind":13,"name":"oneWireBus","range":{"end":{"character":24,"line":11},"start":{"character":0,"line":11}},"selectionRange":{"end":{"character":20,"line":11},"start":{"character":10,"line":11}}},{"detail":"OneWire","kind":13,"name":"oneWire","range":{"end":{"character":27,"line":14},"start":{"character":0,"line":14}},"selectionRange":{"end":{"character":15,"line":14},"start":{"character":8,"line":14}}},{"detail":"DallasTemperature","kind":13,"name":"sensors","range":{"end":{"character":35,"line":17},"start":{"character":0,"line":17}},"selectionRange":{"end":{"character":25,"line":17},"start":{"character":18,"line":17}}},{"detail":"void ()","kind":12,"name":"setup","range":{"end":{"character":12,"line":20},"start":{"character":0,"line":20}},"selectionRange":{"end":{"character":10,"line":20},"start":{"character":5,"line":20}}},{"detail":"void ()","kind":12,"name":"loop","range":{"end":{"character":11,"line":22},"start":{"character":0,"line":22}},"selectionRange":{"end":{"character":9,"line":22},"start":{"character":5,"line":22}}},{"detail":"void ()","kind":12,"name":"setup","range":{"end":{"character":1,"line":29},"start":{"character":0,"line":24}},"selectionRange":{"end":{"character":10,"line":24},"start":{"character":5,"line":24}}},{"detail":"void ()","kind":12,"name":"loop","range":{"end":{"character":1,"line":40},"start":{"character":0,"line":31}},"selectionRange":{"end":{"character":9,"line":31},"start":{"character":5,"line":31}}}]}Content-Length: 107
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"end"}}}
+>>>
+Content-Length: 200
+
+{"jsonrpc":"2.0","method":"textDocument/didSave","params":{"textDocument":{"uri":"file:///c%3A/Users/%D1%80%D1%81/AppData/Local/Temp/arduino-language-server832218445/build/sketch/TemoCloud.ino.cpp"}}}Content-Length: 1609
+
+{"jsonrpc":"2.0","method":"textDocument/didChange","params":{"textDocument":{"uri":"file:///c%3A/Users/%D1%80%D1%81/AppData/Local/Temp/arduino-language-server832218445/build/sketch/TemoCloud.ino.cpp","version":2},"contentChanges":[{"text":"#include \u003cArduino.h\u003e\n#line 1 \"D:\\\\ESP8266_GitHub\\\\TermoCloud\\\\TemoCloud\\\\TemoCloud.ino\"\n/* 26апр25\nhttps://microkontroller.ru/esp8266-projects/podklyuchenie-datchika-temperatury-ds18b20-k-esp8266/\nПодключение датчика температуры DS18B20 к NodeMCU ESP8266\n*/\n\n#include \u003cOneWire.h\u003e\n#include \u003cDallasTemperature.h\u003e\n\n// GPIO where the DS18B20 is connected to\nconst int oneWireBus = 4;     \n\n// Setup a oneWire instance to communicate with any OneWire devices\nOneWire oneWire(oneWireBus);\n\n// Pass our oneWire reference to Dallas Temperature sensor \nDallasTemperature sensors(\u0026oneWire);\n\n#line 18 \"D:\\\\ESP8266_GitHub\\\\TermoCloud\\\\TemoCloud\\\\TemoCloud.ino\"\nvoid setup();\n#line 25 \"D:\\\\ESP8266_GitHub\\\\TermoCloud\\\\TemoCloud\\\\TemoCloud.ino\"\nvoid loop();\n#line 18 \"D:\\\\ESP8266_GitHub\\\\TermoCloud\\\\TemoCloud\\\\TemoCloud.ino\"\nvoid setup() {\n  // Start the Serial Monitor\n  Serial.begin(115200);\n  // Start the DS18B20 sensor\n  sensors.begin();\n}\n\nvoid loop() {\n  sensors.requestTemperatures(); \n  float temperatureC = sensors.getTempCByIndex(0);\n  float temperatureF = sensors.getTempFByIndex(0);\n  Serial.print(temperatureC);\n  Serial.println(\"ºC\");\n  Serial.print(temperatureF);\n  Serial.println(\"ºF\");\n  delay(5000);\n}\n"}]}}
+<<<
+Content-Length: 111
+
+{"id":1,"jsonrpc":"2.0","method":"window/workDoneProgress/create","params":{"token":"backgroundIndexProgress"}}
+>>>
+Content-Length: 38
+
+{"jsonrpc":"2.0","id":1,"result":null}
+<<<
+Content-Length: 143
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"begin","percentage":0,"title":"indexing"}}}Content-Length: 141
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"0/1","percentage":0}}}Content-Length: 141
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"0/1","percentage":0}}}Content-Length: 107
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"end"}}}
+>>>
+Content-Length: 200
+
+{"jsonrpc":"2.0","method":"textDocument/didSave","params":{"textDocument":{"uri":"file:///c%3A/Users/%D1%80%D1%81/AppData/Local/Temp/arduino-language-server832218445/build/sketch/TemoCloud.ino.cpp"}}}Content-Length: 1609
+
+{"jsonrpc":"2.0","method":"textDocument/didChange","params":{"textDocument":{"uri":"file:///c%3A/Users/%D1%80%D1%81/AppData/Local/Temp/arduino-language-server832218445/build/sketch/TemoCloud.ino.cpp","version":3},"contentChanges":[{"text":"#include \u003cArduino.h\u003e\n#line 1 \"D:\\\\ESP8266_GitHub\\\\TermoCloud\\\\TemoCloud\\\\TemoCloud.ino\"\n/* 26апр25\nhttps://microkontroller.ru/esp8266-projects/podklyuchenie-datchika-temperatury-ds18b20-k-esp8266/\nПодключение датчика температуры DS18B20 к NodeMCU ESP8266\n*/\n\n#include \u003cOneWire.h\u003e\n#include \u003cDallasTemperature.h\u003e\n\n// GPIO where the DS18B20 is connected to\nconst int oneWireBus = 4;     \n\n// Setup a oneWire instance to communicate with any OneWire devices\nOneWire oneWire(oneWireBus);\n\n// Pass our oneWire reference to Dallas Temperature sensor \nDallasTemperature sensors(\u0026oneWire);\n\n#line 18 \"D:\\\\ESP8266_GitHub\\\\TermoCloud\\\\TemoCloud\\\\TemoCloud.ino\"\nvoid setup();\n#line 25 \"D:\\\\ESP8266_GitHub\\\\TermoCloud\\\\TemoCloud\\\\TemoCloud.ino\"\nvoid loop();\n#line 18 \"D:\\\\ESP8266_GitHub\\\\TermoCloud\\\\TemoCloud\\\\TemoCloud.ino\"\nvoid setup() {\n  // Start the Serial Monitor\n  Serial.begin(115200);\n  // Start the DS18B20 sensor\n  sensors.begin();\n}\n\nvoid loop() {\n  sensors.requestTemperatures(); \n  float temperatureC = sensors.getTempCByIndex(0);\n  float temperatureF = sensors.getTempFByIndex(0);\n  Serial.print(temperatureC);\n  Serial.println(\"ºC\");\n  Serial.print(temperatureF);\n  Serial.println(\"ºF\");\n  delay(5000);\n}\n"}]}}
+<<<
+Content-Length: 111
+
+{"id":2,"jsonrpc":"2.0","method":"window/workDoneProgress/create","params":{"token":"backgroundIndexProgress"}}
+>>>
+Content-Length: 38
+
+{"jsonrpc":"2.0","id":2,"result":null}
+<<<
+Content-Length: 143
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"begin","percentage":0,"title":"indexing"}}}Content-Length: 141
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"0/1","percentage":0}}}Content-Length: 141
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"0/1","percentage":0}}}Content-Length: 107
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"end"}}}
+>>>
+Content-Length: 200
+
+{"jsonrpc":"2.0","method":"textDocument/didSave","params":{"textDocument":{"uri":"file:///c%3A/Users/%D1%80%D1%81/AppData/Local/Temp/arduino-language-server832218445/build/sketch/TemoCloud.ino.cpp"}}}Content-Length: 1609
+
+{"jsonrpc":"2.0","method":"textDocument/didChange","params":{"textDocument":{"uri":"file:///c%3A/Users/%D1%80%D1%81/AppData/Local/Temp/arduino-language-server832218445/build/sketch/TemoCloud.ino.cpp","version":4},"contentChanges":[{"text":"#include \u003cArduino.h\u003e\n#line 1 \"D:\\\\ESP8266_GitHub\\\\TermoCloud\\\\TemoCloud\\\\TemoCloud.ino\"\n/* 26апр25\nhttps://microkontroller.ru/esp8266-projects/podklyuchenie-datchika-temperatury-ds18b20-k-esp8266/\nПодключение датчика температуры DS18B20 к NodeMCU ESP8266\n*/\n\n#include \u003cOneWire.h\u003e\n#include \u003cDallasTemperature.h\u003e\n\n// GPIO where the DS18B20 is connected to\nconst int oneWireBus = 4;     \n\n// Setup a oneWire instance to communicate with any OneWire devices\nOneWire oneWire(oneWireBus);\n\n// Pass our oneWire reference to Dallas Temperature sensor \nDallasTemperature sensors(\u0026oneWire);\n\n#line 18 \"D:\\\\ESP8266_GitHub\\\\TermoCloud\\\\TemoCloud\\\\TemoCloud.ino\"\nvoid setup();\n#line 25 \"D:\\\\ESP8266_GitHub\\\\TermoCloud\\\\TemoCloud\\\\TemoCloud.ino\"\nvoid loop();\n#line 18 \"D:\\\\ESP8266_GitHub\\\\TermoCloud\\\\TemoCloud\\\\TemoCloud.ino\"\nvoid setup() {\n  // Start the Serial Monitor\n  Serial.begin(115200);\n  // Start the DS18B20 sensor\n  sensors.begin();\n}\n\nvoid loop() {\n  sensors.requestTemperatures(); \n  float temperatureC = sensors.getTempCByIndex(0);\n  float temperatureF = sensors.getTempFByIndex(0);\n  Serial.print(temperatureC);\n  Serial.println(\"ºC\");\n  Serial.print(temperatureF);\n  Serial.println(\"ºF\");\n  delay(5000);\n}\n"}]}}
+<<<
+Content-Length: 111
+
+{"id":3,"jsonrpc":"2.0","method":"window/workDoneProgress/create","params":{"token":"backgroundIndexProgress"}}
+>>>
+Content-Length: 38
+
+{"jsonrpc":"2.0","id":3,"result":null}
+<<<
+Content-Length: 143
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"begin","percentage":0,"title":"indexing"}}}Content-Length: 141
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"0/1","percentage":0}}}Content-Length: 141
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"0/1","percentage":0}}}Content-Length: 107
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"end"}}}
+>>>
+Content-Length: 216
+
+{"jsonrpc":"2.0","id":"4","method":"textDocument/documentSymbol","params":{"textDocument":{"uri":"file:///c%3A/Users/%D1%80%D1%81/AppData/Local/Temp/arduino-language-server832218445/build/sketch/TemoCloud.ino.cpp"}}}
+<<<
+Content-Length: 1517
+
+{"id":"4","jsonrpc":"2.0","result":[{"detail":"const int","kind":13,"name":"oneWireBus","range":{"end":{"character":24,"line":11},"start":{"character":0,"line":11}},"selectionRange":{"end":{"character":20,"line":11},"start":{"character":10,"line":11}}},{"detail":"OneWire","kind":13,"name":"oneWire","range":{"end":{"character":27,"line":14},"start":{"character":0,"line":14}},"selectionRange":{"end":{"character":15,"line":14},"start":{"character":8,"line":14}}},{"detail":"DallasTemperature","kind":13,"name":"sensors","range":{"end":{"character":35,"line":17},"start":{"character":0,"line":17}},"selectionRange":{"end":{"character":25,"line":17},"start":{"character":18,"line":17}}},{"detail":"void ()","kind":12,"name":"setup","range":{"end":{"character":12,"line":20},"start":{"character":0,"line":20}},"selectionRange":{"end":{"character":10,"line":20},"start":{"character":5,"line":20}}},{"detail":"void ()","kind":12,"name":"loop","range":{"end":{"character":11,"line":22},"start":{"character":0,"line":22}},"selectionRange":{"end":{"character":9,"line":22},"start":{"character":5,"line":22}}},{"detail":"void ()","kind":12,"name":"setup","range":{"end":{"character":1,"line":29},"start":{"character":0,"line":24}},"selectionRange":{"end":{"character":10,"line":24},"start":{"character":5,"line":24}}},{"detail":"void ()","kind":12,"name":"loop","range":{"end":{"character":1,"line":40},"start":{"character":0,"line":31}},"selectionRange":{"end":{"character":9,"line":31},"start":{"character":5,"line":31}}}]}
+>>>
+Content-Length: 245
+
+{"jsonrpc":"2.0","id":"5","method":"textDocument/hover","params":{"textDocument":{"uri":"file:///c%3A/Users/%D1%80%D1%81/AppData/Local/Temp/arduino-language-server832218445/build/sketch/TemoCloud.ino.cpp"},"position":{"line":32,"character":30}}}
+<<<
+Content-Length: 383
+
+{"id":"5","jsonrpc":"2.0","result":{"contents":{"kind":"markdown","value":"### instance-method `requestTemperatures`  \n\n---\n→ `struct DallasTemperature::request_t`  \nTemperature Operations  \n\n---\n```cpp\n// In DallasTemperature\npublic: DallasTemperature::request_t requestTemperatures()\n```"},"range":{"end":{"character":31,"line":32},"start":{"character":30,"line":32}}}}
+>>>
+Content-Length: 245
+
+{"jsonrpc":"2.0","id":"6","method":"textDocument/hover","params":{"textDocument":{"uri":"file:///c%3A/Users/%D1%80%D1%81/AppData/Local/Temp/arduino-language-server832218445/build/sketch/TemoCloud.ino.cpp"},"position":{"line":32,"character":32}}}
+<<<
+Content-Length: 40
+
+{"id":"6","jsonrpc":"2.0","result":null}

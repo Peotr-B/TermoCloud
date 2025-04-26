@@ -1,0 +1,585 @@
+
+
+
+
+
+
+
+Started logging.
+12:21:06.138257 Language server launched with arguments:
+12:21:06.138257   arg[0] = c:\Program Files\Arduino IDE\resources\app\lib\backend\resources\arduino-language-server.exe
+12:21:06.138257   arg[1] = -clangd
+12:21:06.138257   arg[2] = c:\Program Files\Arduino IDE\resources\app\lib\backend\resources\clangd.exe
+12:21:06.138257   arg[3] = -cli-daemon-addr
+12:21:06.138257   arg[4] = localhost:49285
+12:21:06.138257   arg[5] = -cli-daemon-instance
+12:21:06.138257   arg[6] = 1
+12:21:06.138257   arg[7] = -fqbn
+12:21:06.138257   arg[8] = esp8266:esp8266:nodemcuv2:led=2,baud=115200,xtal=80,eesz=4M2M,dbg=Disabled,lvl=None____,ip=lm2f,vt=flash,exception=legacy,wipe=none,ssl=all
+12:21:06.138257   arg[9] = -skip-libraries-discovery-on-rebuild
+12:21:06.138257   arg[10] = -board-name
+12:21:06.138257   arg[11] = NodeMCU 1.0 (ESP-12E Module)
+12:21:06.138257   arg[12] = -no-real-time-diagnostics
+12:21:06.138257   arg[13] = -log
+12:21:06.138257   arg[14] = -logpath
+12:21:06.138257   arg[15] = d:\ESP8266_GitHub\TermoCloud\TemoCloud
+12:21:06.139250 logging to d:\ESP8266_GitHub\TermoCloud\TemoCloud\inols.log
+12:21:06.142702 [97mLS: : Initial board configuration: esp8266:esp8266:nodemcuv2:led=2,baud=115200,xtal=80,eesz=4M2M,dbg=Disabled,lvl=None____,ip=lm2f,vt=flash,exception=legacy,wipe=none,ssl=all[0m
+12:21:06.142702 [97mLS: : arduino-language-server.exe Version: 0.0.0-git Commit:  Date: [0m
+12:21:06.142702 [97mLS: : Language server temp directory: C:\Users\рс\AppData\Local\Temp\arduino-language-server832218445[0m
+12:21:06.142702 [97mLS: : Language server build path: C:\Users\рс\AppData\Local\Temp\arduino-language-server832218445\build[0m
+12:21:06.142702 [97mLS: : Language server build sketch root: C:\Users\рс\AppData\Local\Temp\arduino-language-server832218445\build\sketch[0m
+12:21:06.142702 [97mLS: : Language server FULL build path: C:\Users\рс\AppData\Local\Temp\arduino-language-server832218445\fullbuild[0m
+12:21:06.143252 IN Elapsed: 549.9µs
+12:21:06.143789 [92mIDE --> LS REQU initialize 0[0m
+12:21:06.144838 [92m                initialize 0: [93mwrite-locked[0m[0m
+12:21:06.144977 [92m                initialize 0: [93mwrite-unlocked[0m[0m
+12:21:06.145485 [96mINIT --- : initializing workbench: file:///d%3A/ESP8266_GitHub/TermoCloud/TemoCloud[0m
+12:21:06.145529 [96mINIT --- : [93mread-locked[0m[0m
+12:21:06.145529 [96mINIT --- : [93mread-unlocked[0m[0m
+12:21:06.145529 [92m                initialize 0: initialization parameters: {"capabilities":{"textDocumentSync":{"openClose":true,"change":2,"save":{"includeText":true}},"completionProvider":{"triggerCharacters":[".","\u003c","\u003e",":","\"","/"],"allCommitCharacters":[" ","\t","(",")","[","]","{","}","\u003c","\u003e",":",";",",","+","-","/","*","%","^","\u0026","#","?",".","=","\"","'","|"],"completionItem":{}},"hoverProvider":{},"signatureHelpProvider":{"triggerCharacters":["(",","]},"definitionProvider":{},"documentHighlightProvider":{},"documentSymbolProvider":{},"codeActionProvider":{"codeActionKinds":["quickfix","refactor","info"]},"documentFormattingProvider":{},"documentRangeFormattingProvider":{},"documentOnTypeFormattingProvider":{"firstTriggerCharacter":"\n"},"renameProvider":{},"executeCommandProvider":{"commands":["clangd.applyFix","clangd.applyTweak"]},"workspaceSymbolProvider":{}},"serverInfo":{"name":"arduino-language-server","version":"0.0.0-git"}}[0m
+12:21:06.145529 [32mIDE <-- LS RESP initialize 0[0m
+12:21:06.146066 OUT Elapsed: 28.9µs
+12:21:06.152424 IN Elapsed: 6.3587ms
+12:21:06.152424 [92mIDE --> LS NOTIF initialized[0m
+12:21:06.152934 [92m                 initialized: Notification is not propagated to clangd[0m
+12:21:06.152964 IN Elapsed: 30.4µs
+12:21:06.152964 [92mIDE --> LS NOTIF textDocument/didOpen[0m
+12:21:06.152964 [92m                 textDocument/didOpen: [93mwrite-locked[0m[0m
+12:21:06.152964 [92m                 textDocument/didOpen: (throttled: waiting for clangd)[0m
+12:21:06.152964 [92m                 textDocument/didOpen: [93munlocked (waiting clangd)[0m[0m
+12:21:06.158153 [96mINIT --- : Running build with: {
+  "instance": {
+    "id": 1
+  },
+  "fqbn": "esp8266:esp8266:nodemcuv2:led=2,baud=115200,xtal=80,eesz=4M2M,dbg=Disabled,lvl=None____,ip=lm2f,vt=flash,exception=legacy,wipe=none,ssl=all",
+  "sketch_path": "D:\\ESP8266_GitHub\\TermoCloud\\TemoCloud",
+  "build_path": "C:\\Users\\рс\\AppData\\Local\\Temp\\arduino-language-server832218445\\fullbuild",
+  "verbose": true,
+  "create_compilation_database_only": true
+}[0m
+12:21:10.596933 [96mINIT --- : Compile successful![0m
+12:21:10.611716 [96mINIT --- : Updated 'libraries.cache'. Copied: C:\Users\рс\AppData\Local\Temp\arduino-language-server832218445\fullbuild\libraries.cache to C:\Users\рс\AppData\Local\Temp\arduino-language-server832218445\build\libraries.cache[0m
+12:21:10.611716 [96mINIT --- : [93mread-locked[0m[0m
+12:21:10.611716 [96mINIT --- : [93mread-unlocked[0m[0m
+12:21:10.614059 [96mINIT --- : Running build with: {
+  "instance": {
+    "id": 1
+  },
+  "fqbn": "esp8266:esp8266:nodemcuv2:led=2,baud=115200,xtal=80,eesz=4M2M,dbg=Disabled,lvl=None____,ip=lm2f,vt=flash,exception=legacy,wipe=none,ssl=all",
+  "sketch_path": "D:\\ESP8266_GitHub\\TermoCloud\\TemoCloud",
+  "build_path": "C:\\Users\\рс\\AppData\\Local\\Temp\\arduino-language-server832218445\\build",
+  "verbose": true,
+  "create_compilation_database_only": true,
+  "skip_libraries_discovery": true
+}[0m
+12:21:13.097493 [96mINIT --- : Compile successful![0m
+12:21:13.148518 [96mINIT --- : Arduino Data Dir -> c:\Users\рс\AppData\Local\Arduino15[0m
+12:21:13.150190 [96mINIT --- :     Starting clangd: c:\Program Files\Arduino IDE\resources\app\lib\backend\resources\clangd.exe -log=verbose --pch-storage=memory --compile-commands-dir=C:\Users\рс\AppData\Local\Temp\arduino-language-server832218445\build -j 1 -query-driver=C:\Users\рс\AppData\Local\Arduino15\packages\**[0m
+12:21:13.260516 logging to d:\ESP8266_GitHub\TermoCloud\TemoCloud\inols-clangd.log
+12:21:13.261061 logging to d:\ESP8266_GitHub\TermoCloud\TemoCloud\inols-clangd-err.log
+12:21:13.261061 [91mIDE     LS --> Clangd REQU initialize 1[0m
+12:21:13.262129 OUT Elapsed: 535µs
+12:21:13.315166 IN Elapsed: 54.1047ms
+12:21:13.315166 [31mIDE     LS <-- Clangd RESP initialize 1[0m
+12:21:13.316257 [96mINIT --- : clangd successfully started: {"capabilities":{"textDocumentSync":{"openClose":true,"change":2,"save":{}},"completionProvider":{"triggerCharacters":[".","\u003c","\u003e",":","\"","/","*"],"allCommitCharacters":[" ","\t","(",")","[","]","{","}","\u003c","\u003e",":",";",",","+","-","/","*","%","^","\u0026","#","?",".","=","\"","'","|"]},"hoverProvider":{},"signatureHelpProvider":{"triggerCharacters":["(",")","{","}","\u003c","\u003e",","]},"declarationProvider":{},"definitionProvider":{},"typeDefinitionProvider":{},"implementationProvider":{},"referencesProvider":{},"documentHighlightProvider":{},"documentSymbolProvider":{},"codeActionProvider":{"codeActionKinds":["quickfix","refactor","info"]},"documentLinkProvider":{},"documentFormattingProvider":{},"documentRangeFormattingProvider":{},"documentOnTypeFormattingProvider":{"firstTriggerCharacter":"\n"},"renameProvider":{"prepareProvider":true},"executeCommandProvider":{"commands":["clangd.applyFix","clangd.applyTweak"]},"selectionRangeProvider":{},"callHierarchyProvider":{},"semanticTokensProvider":{"legend":{"tokenTypes":["variable","variable","parameter","function","method","function","property","variable","class","interface","enum","enumMember","type","type","unknown","namespace","typeParameter","concept","type","macro","comment"],"tokenModifiers":["declaration","deprecated","deduced","readonly","static","abstract","virtual","dependentName","defaultLibrary","usedAsMutableReference","functionScope","classScope","fileScope","globalScope"]},"range":false,"full":{"delta":true}},"workspaceSymbolProvider":{}},"serverInfo":{"name":"clangd","version":"clangd version 14.0.0 windows x86_64-pc-windows-msvc"}}[0m
+12:21:13.316257 [91mIDE     LS --> Clangd NOTIF initialized[0m
+12:21:13.316257 OUT Elapsed: 0s
+12:21:13.316257 [96mINIT --- : Done initializing workbench[0m
+12:21:13.316794 [92m                 textDocument/didOpen: [93mlocked (waiting clangd)[0m[0m
+12:21:13.316794 [92m                 textDocument/didOpen: URI: file:///d%3A/ESP8266_GitHub/TermoCloud/TemoCloud/TemoCloud.ino -> file:///c%3A/Users/%D1%80%D1%81/AppData/Local/Temp/arduino-language-server832218445/build/sketch/TemoCloud.ino.cpp[0m
+12:21:13.318406 [92m                 textDocument/didOpen: Increasing .ino tracked files count to 1[0m
+12:21:13.319488 [91mIDE     LS --> Clangd NOTIF textDocument/didOpen[0m
+12:21:13.319488 OUT Elapsed: 0s
+12:21:13.319488 [92m                 textDocument/didOpen: [93mwrite-unlocked[0m[0m
+12:21:13.319488 IN Elapsed: 0s
+12:21:13.319488 [92mIDE --> LS REQU textDocument/codeAction 1[0m
+12:21:13.319999 [92m                textDocument/codeAction 1: [93mread-locked[0m[0m
+12:21:13.320032 [92m                textDocument/codeAction 1: --> codeAction(file:///d%3A/ESP8266_GitHub/TermoCloud/TemoCloud/TemoCloud.ino:0:0)[0m
+12:21:13.320032 [92m                textDocument/codeAction 1: URI: file:///d%3A/ESP8266_GitHub/TermoCloud/TemoCloud/TemoCloud.ino -> file:///c%3A/Users/%D1%80%D1%81/AppData/Local/Temp/arduino-language-server832218445/build/sketch/TemoCloud.ino.cpp[0m
+12:21:13.321653 [92m                textDocument/codeAction 1:     --> codeAction(file:///c%3A/Users/%D1%80%D1%81/AppData/Local/Temp/arduino-language-server832218445/build/sketch/TemoCloud.ino.cpp:0:0)[0m
+12:21:13.321653 [91mIDE     LS --> Clangd REQU textDocument/codeAction 2[0m
+12:21:13.321653 OUT Elapsed: 0s
+12:21:13.328509 IN Elapsed: 13.3428ms
+12:21:13.328509 [91mIDE     LS <-- Clangd NOTIF textDocument/publishDiagnostics[0m
+12:21:13.329060 [91m                            textDocument/publishDiagnostics: Ignored by configuration[0m
+12:21:13.342391 IN Elapsed: 13.8818ms
+12:21:13.342937 [91mIDE     LS <-- Clangd NOTIF textDocument/publishDiagnostics[0m
+12:21:13.342937 [91m                            textDocument/publishDiagnostics: Ignored by configuration[0m
+12:21:13.348827 IN Elapsed: 5.8901ms
+12:21:13.348827 [91mIDE     LS <-- Clangd REQU window/workDoneProgress/create 0[0m
+12:21:13.348827 [31mIDE     LS --> Clangd RESP window/workDoneProgress/create 0[0m
+12:21:13.348827 [92mIDE <-- LS REQU window/workDoneProgress/create 1[0m
+12:21:13.348827 OUT Elapsed: 0s
+12:21:13.348827 OUT Elapsed: 0s
+12:21:13.348827 IN Elapsed: 0s
+12:21:13.348827 [91mIDE     LS <-- Clangd NOTIF $/progress[0m
+12:21:13.349420 [91m                            $/progress: backgroundIndexProgress BEGIN indexing, 0.0%[0m
+12:21:13.349420 IN Elapsed: 0s
+12:21:13.349420 [91mIDE     LS <-- Clangd NOTIF $/progress[0m
+12:21:13.349420 [91m                            $/progress: backgroundIndexProgress REPORT, 0/1, 0.0%[0m
+12:21:13.351963 IN Elapsed: 2.5424ms
+12:21:13.352505 [91mIDE     LS <-- Clangd NOTIF $/progress[0m
+12:21:13.352505 [91m                            $/progress: backgroundIndexProgress REPORT, 0/2, 0.0%[0m
+12:21:13.352505 IN Elapsed: 0s
+12:21:13.352505 [91mIDE     LS <-- Clangd NOTIF $/progress[0m
+12:21:13.352505 [91m                            $/progress: backgroundIndexProgress REPORT, 1/2, 50.0%[0m
+12:21:13.352505 IN Elapsed: 0s
+12:21:13.352505 [91mIDE     LS <-- Clangd NOTIF $/progress[0m
+12:21:13.352505 [91m                            $/progress: backgroundIndexProgress REPORT, 1/2, 50.0%[0m
+12:21:13.729455 IN Elapsed: 376.9467ms
+12:21:13.731000 [91mIDE     LS <-- Clangd NOTIF textDocument/publishDiagnostics[0m
+12:21:13.731000 [91m                            textDocument/publishDiagnostics: Ignored by configuration[0m
+12:21:13.731538 IN Elapsed: 538.2µs
+12:21:13.731538 [31mIDE     LS <-- Clangd RESP textDocument/codeAction 2[0m
+12:21:13.732062 [92m                textDocument/codeAction 1: [93mread-unlocked[0m[0m
+12:21:13.732062 [32mIDE <-- LS RESP textDocument/codeAction 1[0m
+12:21:13.732062 OUT Elapsed: 0s
+12:21:13.732062 IN Elapsed: 0s
+12:21:13.732062 [92mIDE --> LS REQU textDocument/documentSymbol 2[0m
+12:21:13.732062 [92m                textDocument/documentSymbol 2: [93mread-locked[0m[0m
+12:21:13.732582 [92m                textDocument/documentSymbol 2: URI: file:///d%3A/ESP8266_GitHub/TermoCloud/TemoCloud/TemoCloud.ino -> file:///c%3A/Users/%D1%80%D1%81/AppData/Local/Temp/arduino-language-server832218445/build/sketch/TemoCloud.ino.cpp[0m
+12:21:13.732582 [91mIDE     LS --> Clangd REQU textDocument/documentSymbol 3[0m
+12:21:13.732582 OUT Elapsed: 0s
+12:21:13.733131 IN Elapsed: 1.5928ms
+12:21:13.733131 [31mIDE     LS <-- Clangd RESP textDocument/documentSymbol 3[0m
+12:21:13.733673 [92m                textDocument/documentSymbol 2: file:///c%3A/Users/%D1%80%D1%81/AppData/Local/Temp/arduino-language-server832218445/build/sketch/TemoCloud.ino.cpp (7 document symbols)[0m
+12:21:13.733673 [92m                textDocument/documentSymbol 2:   > convert SymbolKind:Variable 11:0-11:24[0m
+12:21:13.734737 [92m                textDocument/documentSymbol 2: Range: file:///c%3A/Users/%D1%80%D1%81/AppData/Local/Temp/arduino-language-server832218445/build/sketch/TemoCloud.ino.cpp:11:0-11:24 -> file:///d%3A/ESP8266_GitHub/TermoCloud/TemoCloud/TemoCloud.ino:9:0-9:24 (.ino)[0m
+12:21:13.735590 [92m                textDocument/documentSymbol 2: Range: file:///c%3A/Users/%D1%80%D1%81/AppData/Local/Temp/arduino-language-server832218445/build/sketch/TemoCloud.ino.cpp:11:10-11:20 -> file:///d%3A/ESP8266_GitHub/TermoCloud/TemoCloud/TemoCloud.ino:9:10-9:20 (.ino)[0m
+12:21:13.736101 [92m                textDocument/documentSymbol 2: file:///c%3A/Users/%D1%80%D1%81/AppData/Local/Temp/arduino-language-server832218445/build/sketch/TemoCloud.ino.cpp (0 document symbols)[0m
+12:21:13.736128 [92m                textDocument/documentSymbol 2:   > convert SymbolKind:Variable 14:0-14:27[0m
+12:21:13.737203 [92m                textDocument/documentSymbol 2: Range: file:///c%3A/Users/%D1%80%D1%81/AppData/Local/Temp/arduino-language-server832218445/build/sketch/TemoCloud.ino.cpp:14:0-14:27 -> file:///d%3A/ESP8266_GitHub/TermoCloud/TemoCloud/TemoCloud.ino:12:0-12:27 (.ino)[0m
+12:21:13.738274 [92m                textDocument/documentSymbol 2: Range: file:///c%3A/Users/%D1%80%D1%81/AppData/Local/Temp/arduino-language-server832218445/build/sketch/TemoCloud.ino.cpp:14:8-14:15 -> file:///d%3A/ESP8266_GitHub/TermoCloud/TemoCloud/TemoCloud.ino:12:8-12:15 (.ino)[0m
+12:21:13.738274 [92m                textDocument/documentSymbol 2: file:///c%3A/Users/%D1%80%D1%81/AppData/Local/Temp/arduino-language-server832218445/build/sketch/TemoCloud.ino.cpp (0 document symbols)[0m
+12:21:13.738274 [92m                textDocument/documentSymbol 2:   > convert SymbolKind:Variable 17:0-17:35[0m
+12:21:13.739169 [92m                textDocument/documentSymbol 2: Range: file:///c%3A/Users/%D1%80%D1%81/AppData/Local/Temp/arduino-language-server832218445/build/sketch/TemoCloud.ino.cpp:17:0-17:35 -> file:///d%3A/ESP8266_GitHub/TermoCloud/TemoCloud/TemoCloud.ino:15:0-15:35 (.ino)[0m
+12:21:13.740242 [92m                textDocument/documentSymbol 2: Range: file:///c%3A/Users/%D1%80%D1%81/AppData/Local/Temp/arduino-language-server832218445/build/sketch/TemoCloud.ino.cpp:17:18-17:25 -> file:///d%3A/ESP8266_GitHub/TermoCloud/TemoCloud/TemoCloud.ino:15:18-15:25 (.ino)[0m
+12:21:13.740242 [92m                textDocument/documentSymbol 2: file:///c%3A/Users/%D1%80%D1%81/AppData/Local/Temp/arduino-language-server832218445/build/sketch/TemoCloud.ino.cpp (0 document symbols)[0m
+12:21:13.740242 [92m                textDocument/documentSymbol 2:   > convert SymbolKind:Function 20:0-20:12[0m
+12:21:13.741932 [92m                textDocument/documentSymbol 2: Range is in PREPROCESSED section of the sketch[0m
+12:21:13.741932 [92m                textDocument/documentSymbol 2: Range: file:///c%3A/Users/%D1%80%D1%81/AppData/Local/Temp/arduino-language-server832218445/build/sketch/TemoCloud.ino.cpp:20:0-20:12 -> file:///d%3A/ESP8266_GitHub/TermoCloud/TemoCloud/TemoCloud.ino:17:0-17:12 (.ino)[0m
+12:21:13.741932 [92m                textDocument/documentSymbol 2:     symbol is in the preprocessed section of the sketch.ino.cpp, skipping[0m
+12:21:13.741932 [92m                textDocument/documentSymbol 2:   > convert SymbolKind:Function 22:0-22:11[0m
+12:21:13.742982 [92m                textDocument/documentSymbol 2: Range is in PREPROCESSED section of the sketch[0m
+12:21:13.742982 [92m                textDocument/documentSymbol 2: Range: file:///c%3A/Users/%D1%80%D1%81/AppData/Local/Temp/arduino-language-server832218445/build/sketch/TemoCloud.ino.cpp:22:0-22:11 -> file:///d%3A/ESP8266_GitHub/TermoCloud/TemoCloud/TemoCloud.ino:24:0-24:11 (.ino)[0m
+12:21:13.742982 [92m                textDocument/documentSymbol 2:     symbol is in the preprocessed section of the sketch.ino.cpp, skipping[0m
+12:21:13.742982 [92m                textDocument/documentSymbol 2:   > convert SymbolKind:Function 24:0-29:1[0m
+12:21:13.744555 [92m                textDocument/documentSymbol 2: Range: file:///c%3A/Users/%D1%80%D1%81/AppData/Local/Temp/arduino-language-server832218445/build/sketch/TemoCloud.ino.cpp:24:0-29:1 -> file:///d%3A/ESP8266_GitHub/TermoCloud/TemoCloud/TemoCloud.ino:17:0-22:1 (.ino)[0m
+12:21:13.745613 [92m                textDocument/documentSymbol 2: Range: file:///c%3A/Users/%D1%80%D1%81/AppData/Local/Temp/arduino-language-server832218445/build/sketch/TemoCloud.ino.cpp:24:5-24:10 -> file:///d%3A/ESP8266_GitHub/TermoCloud/TemoCloud/TemoCloud.ino:17:5-17:10 (.ino)[0m
+12:21:13.745613 [92m                textDocument/documentSymbol 2: file:///c%3A/Users/%D1%80%D1%81/AppData/Local/Temp/arduino-language-server832218445/build/sketch/TemoCloud.ino.cpp (0 document symbols)[0m
+12:21:13.745613 [92m                textDocument/documentSymbol 2:   > convert SymbolKind:Function 31:0-40:1[0m
+12:21:13.746720 [92m                textDocument/documentSymbol 2: Range: file:///c%3A/Users/%D1%80%D1%81/AppData/Local/Temp/arduino-language-server832218445/build/sketch/TemoCloud.ino.cpp:31:0-40:1 -> file:///d%3A/ESP8266_GitHub/TermoCloud/TemoCloud/TemoCloud.ino:24:0-33:1 (.ino)[0m
+12:21:13.747801 [92m                textDocument/documentSymbol 2: Range: file:///c%3A/Users/%D1%80%D1%81/AppData/Local/Temp/arduino-language-server832218445/build/sketch/TemoCloud.ino.cpp:31:5-31:9 -> file:///d%3A/ESP8266_GitHub/TermoCloud/TemoCloud/TemoCloud.ino:24:5-24:9 (.ino)[0m
+12:21:13.747801 [92m                textDocument/documentSymbol 2: file:///c%3A/Users/%D1%80%D1%81/AppData/Local/Temp/arduino-language-server832218445/build/sketch/TemoCloud.ino.cpp (0 document symbols)[0m
+12:21:13.747801 [92m                textDocument/documentSymbol 2: [93mread-unlocked[0m[0m
+12:21:13.747801 [32mIDE <-- LS RESP textDocument/documentSymbol 2[0m
+12:21:13.747801 OUT Elapsed: 0s
+12:21:13.747801 IN Elapsed: 0s
+12:21:13.748331 [32mIDE --> LS RESP window/workDoneProgress/create 1[0m
+12:21:13.748331 [92mIDE <-- LS NOTIF $/progress[0m
+12:21:13.748331 OUT Elapsed: 0s
+12:21:13.748331 [92mIDE <-- LS NOTIF $/progress[0m
+12:21:13.748331 OUT Elapsed: 0s
+12:21:14.335554 IN Elapsed: 602.4185ms
+12:21:14.335554 [91mIDE     LS <-- Clangd NOTIF $/progress[0m
+12:21:14.335554 [91m                            $/progress: backgroundIndexProgress END [0m
+12:21:14.335554 [92mIDE <-- LS NOTIF $/progress[0m
+12:21:14.335554 OUT Elapsed: 0s
+12:21:20.656649 IN Elapsed: 6.9088006s
+12:21:20.657746 [92mIDE --> LS NOTIF ino/didCompleteBuild[0m
+12:21:20.658237 [92m                 ino/didCompleteBuild: [93mwrite-locked[0m[0m
+12:21:20.661719 [92m                 ino/didCompleteBuild: Updated 'libraries.cache'. Copied: C:\Users\рс\AppData\Local\arduino\sketches\DED8D48A9CC8B4B1794B2DD1B62EF77D\libraries.cache to C:\Users\рс\AppData\Local\Temp\arduino-language-server832218445\build\libraries.cache[0m
+12:21:20.661719 [92m                 ino/didCompleteBuild: [93mwrite-unlocked[0m[0m
+12:21:21.663309 [95mSKETCH REBUILD: : Sketch rebuild started[0m
+12:21:21.663309 [92mIDE <-- LS REQU window/workDoneProgress/create 2[0m
+12:21:21.663309 [95mSKETCH REBUILD: : [93mread-locked[0m[0m
+12:21:21.663309 [95mSKETCH REBUILD: : [93mread-unlocked[0m[0m
+12:21:21.663309 OUT Elapsed: 0s
+12:21:21.664292 IN Elapsed: 1.0025657s
+12:21:21.664292 [32mIDE --> LS RESP window/workDoneProgress/create 2[0m
+12:21:21.664292 [92mIDE <-- LS NOTIF $/progress[0m
+12:21:21.664292 OUT Elapsed: 0s
+12:21:21.669545 [95mSKETCH REBUILD: : Running build with: {
+  "instance": {
+    "id": 1
+  },
+  "fqbn": "esp8266:esp8266:nodemcuv2:led=2,baud=115200,xtal=80,eesz=4M2M,dbg=Disabled,lvl=None____,ip=lm2f,vt=flash,exception=legacy,wipe=none,ssl=all",
+  "sketch_path": "D:\\ESP8266_GitHub\\TermoCloud\\TemoCloud",
+  "build_path": "C:\\Users\\рс\\AppData\\Local\\Temp\\arduino-language-server832218445\\build",
+  "verbose": true,
+  "create_compilation_database_only": true,
+  "source_override": {
+    "TemoCloud.ino": "/* 26апр25\r\nhttps://microkontroller.ru/esp8266-projects/podklyuchenie-datchika-temperatury-ds18b20-k-esp8266/\r\nПодключение датчика температуры DS18B20 к NodeMCU ESP8266\r\n*/\r\n\r\n#include \u003cOneWire.h\u003e\r\n#include \u003cDallasTemperature.h\u003e\r\n\r\n// GPIO where the DS18B20 is connected to\r\nconst int oneWireBus = 4;     \r\n\r\n// Setup a oneWire instance to communicate with any OneWire devices\r\nOneWire oneWire(oneWireBus);\r\n\r\n// Pass our oneWire reference to Dallas Temperature sensor \r\nDallasTemperature sensors(\u0026oneWire);\r\n\r\nvoid setup() {\r\n  // Start the Serial Monitor\r\n  Serial.begin(115200);\r\n  // Start the DS18B20 sensor\r\n  sensors.begin();\r\n}\r\n\r\nvoid loop() {\r\n  sensors.requestTemperatures(); \r\n  float temperatureC = sensors.getTempCByIndex(0);\r\n  float temperatureF = sensors.getTempFByIndex(0);\r\n  Serial.print(temperatureC);\r\n  Serial.println(\"ºC\");\r\n  Serial.print(temperatureF);\r\n  Serial.println(\"ºF\");\r\n  delay(5000);\r\n}"
+  },
+  "skip_libraries_discovery": true
+}[0m
+12:21:24.623237 [95mSKETCH REBUILD: : Compile successful![0m
+12:21:24.661147 [95mSKETCH REBUILD: : [93mwrite-locked[0m[0m
+12:21:24.662644   > Current sketchmapper content:
+12:21:24.662644   0: #include <Arduino.h>                                         | /not-ino:0                                         
+12:21:24.662644   1: #line 1 "D:\\ESP8266_GitHub\\TermoCloud\\TemoCloud\\TemoClou | /not-ino:0                                         
+12:21:24.662644   2: /* 26апр25                                                   | D:\ESP8266_GitHub\TermoCloud\TemoCloud\TemoCloud.ino:0                          
+12:21:24.662644   3: https://microkontroller.ru/esp8266-projects/podklyuchenie-da | D:\ESP8266_GitHub\TermoCloud\TemoCloud\TemoCloud.ino:1                          
+12:21:24.662644   4: Подключение датчика температуры                              | D:\ESP8266_GitHub\TermoCloud\TemoCloud\TemoCloud.ino:2                          
+12:21:24.662644   5: */                                                           | D:\ESP8266_GitHub\TermoCloud\TemoCloud\TemoCloud.ino:3                          
+12:21:24.662644   6:                                                              | D:\ESP8266_GitHub\TermoCloud\TemoCloud\TemoCloud.ino:4                          
+12:21:24.662644   7: #include <OneWire.h>                                         | D:\ESP8266_GitHub\TermoCloud\TemoCloud\TemoCloud.ino:5                          
+12:21:24.662644   8: #include <DallasTemperature.h>                               | D:\ESP8266_GitHub\TermoCloud\TemoCloud\TemoCloud.ino:6                          
+12:21:24.662644   9:                                                              | D:\ESP8266_GitHub\TermoCloud\TemoCloud\TemoCloud.ino:7                          
+12:21:24.662644  10: // GPIO where the DS18B20 is connected to                    | D:\ESP8266_GitHub\TermoCloud\TemoCloud\TemoCloud.ino:8                          
+12:21:24.662644  11: const int oneWireBus = 4;                                    | D:\ESP8266_GitHub\TermoCloud\TemoCloud\TemoCloud.ino:9                          
+12:21:24.662644  12:                                                              | D:\ESP8266_GitHub\TermoCloud\TemoCloud\TemoCloud.ino:10                          
+12:21:24.662644  13: // Setup a oneWire instance to communicate with any OneWire  | D:\ESP8266_GitHub\TermoCloud\TemoCloud\TemoCloud.ino:11                          
+12:21:24.662644  14: OneWire oneWire(oneWireBus);                                 | D:\ESP8266_GitHub\TermoCloud\TemoCloud\TemoCloud.ino:12                          
+12:21:24.662644  15:                                                              | D:\ESP8266_GitHub\TermoCloud\TemoCloud\TemoCloud.ino:13                          
+12:21:24.662644  16: // Pass our oneWire reference to Dallas Temperature sensor   | D:\ESP8266_GitHub\TermoCloud\TemoCloud\TemoCloud.ino:14                          
+12:21:24.662644  17: DallasTemperature sensors(&oneWire);                         | D:\ESP8266_GitHub\TermoCloud\TemoCloud\TemoCloud.ino:15                          
+12:21:24.662644  18:                                                              | D:\ESP8266_GitHub\TermoCloud\TemoCloud\TemoCloud.ino:16                          
+12:21:24.662644  19: #line 18 "D:\\ESP8266_GitHub\\TermoCloud\\TemoCloud\\TemoClo | /not-ino:0                                         
+12:21:24.663106  20: void setup();                                                | D:\ESP8266_GitHub\TermoCloud\TemoCloud\TemoCloud.ino:17 D:\ESP8266_GitHub\TermoCloud\TemoCloud\TemoCloud.ino:17
+12:21:24.663106  21: #line 25 "D:\\ESP8266_GitHub\\TermoCloud\\TemoCloud\\TemoClo | /not-ino:0                                         
+12:21:24.663106  22: void loop();                                                 | D:\ESP8266_GitHub\TermoCloud\TemoCloud\TemoCloud.ino:24 D:\ESP8266_GitHub\TermoCloud\TemoCloud\TemoCloud.ino:24
+12:21:24.663106  23: #line 18 "D:\\ESP8266_GitHub\\TermoCloud\\TemoCloud\\TemoClo | /not-ino:0                                         
+12:21:24.663106  24: void setup() {                                               | D:\ESP8266_GitHub\TermoCloud\TemoCloud\TemoCloud.ino:17                          
+12:21:24.663194  25:   // Start the Serial Monitor                                | D:\ESP8266_GitHub\TermoCloud\TemoCloud\TemoCloud.ino:18                          
+12:21:24.663194  26:   Serial.begin(115200);                                      | D:\ESP8266_GitHub\TermoCloud\TemoCloud\TemoCloud.ino:19                          
+12:21:24.663194  27:   // Start the DS18B20 sensor                                | D:\ESP8266_GitHub\TermoCloud\TemoCloud\TemoCloud.ino:20                          
+12:21:24.663194  28:   sensors.begin();                                           | D:\ESP8266_GitHub\TermoCloud\TemoCloud\TemoCloud.ino:21                          
+12:21:24.663194  29: }                                                            | D:\ESP8266_GitHub\TermoCloud\TemoCloud\TemoCloud.ino:22                          
+12:21:24.663194  30:                                                              | D:\ESP8266_GitHub\TermoCloud\TemoCloud\TemoCloud.ino:23                          
+12:21:24.663194  31: void loop() {                                                | D:\ESP8266_GitHub\TermoCloud\TemoCloud\TemoCloud.ino:24                          
+12:21:24.663194  32:   sensors.requestTemperatures();                             | D:\ESP8266_GitHub\TermoCloud\TemoCloud\TemoCloud.ino:25                          
+12:21:24.663194  33:   float temperatureC = sensors.getTempCByIndex(0);           | D:\ESP8266_GitHub\TermoCloud\TemoCloud\TemoCloud.ino:26                          
+12:21:24.663194  34:   float temperatureF = sensors.getTempFByIndex(0);           | D:\ESP8266_GitHub\TermoCloud\TemoCloud\TemoCloud.ino:27                          
+12:21:24.663194  35:   Serial.print(temperatureC);                                | D:\ESP8266_GitHub\TermoCloud\TemoCloud\TemoCloud.ino:28                          
+12:21:24.663194  36:   Serial.println("ºC");                                      | D:\ESP8266_GitHub\TermoCloud\TemoCloud\TemoCloud.ino:29                          
+12:21:24.663194  37:   Serial.print(temperatureF);                                | D:\ESP8266_GitHub\TermoCloud\TemoCloud\TemoCloud.ino:30                          
+12:21:24.663194  38:   Serial.println("ºF");                                      | D:\ESP8266_GitHub\TermoCloud\TemoCloud\TemoCloud.ino:31                          
+12:21:24.663194  39:   delay(5000);                                               | D:\ESP8266_GitHub\TermoCloud\TemoCloud\TemoCloud.ino:32                          
+12:21:24.663194  40: }                                                            | D:\ESP8266_GitHub\TermoCloud\TemoCloud\TemoCloud.ino:33                          
+12:21:24.663194  41:                                                              | D:\ESP8266_GitHub\TermoCloud\TemoCloud\TemoCloud.ino:34                          
+12:21:24.663194 [95mSKETCH REBUILD: : Sending 'didSave' notification to Clangd[0m
+12:21:24.663194 [91mIDE     LS --> Clangd NOTIF textDocument/didSave[0m
+12:21:24.663194 OUT Elapsed: 0s
+12:21:24.663194 [95mSKETCH REBUILD: : Sending full-text 'didChange' notification to Clangd[0m
+12:21:24.663194 [91mIDE     LS --> Clangd NOTIF textDocument/didChange[0m
+12:21:24.663194 OUT Elapsed: 0s
+12:21:24.663194 [95mSKETCH REBUILD: : [93mwrite-unlocked[0m[0m
+12:21:24.663194 [92mIDE <-- LS NOTIF $/progress[0m
+12:21:24.663194 OUT Elapsed: 0s
+12:21:24.742869 IN Elapsed: 10.4072229s
+12:21:24.742944 [91mIDE     LS <-- Clangd REQU window/workDoneProgress/create 1[0m
+12:21:24.742944 [31mIDE     LS --> Clangd RESP window/workDoneProgress/create 1[0m
+12:21:24.742944 OUT Elapsed: 0s
+12:21:24.742944 [92mIDE <-- LS REQU window/workDoneProgress/create 3[0m
+12:21:24.742944 OUT Elapsed: 0s
+12:21:24.742944 IN Elapsed: 0s
+12:21:24.742944 [91mIDE     LS <-- Clangd NOTIF $/progress[0m
+12:21:24.742944 [91m                            $/progress: backgroundIndexProgress BEGIN indexing, 0.0%[0m
+12:21:24.742944 IN Elapsed: 0s
+12:21:24.743472 [91mIDE     LS <-- Clangd NOTIF $/progress[0m
+12:21:24.743495 [91m                            $/progress: backgroundIndexProgress REPORT, 0/1, 0.0%[0m
+12:21:24.743495 IN Elapsed: 3.0791816s
+12:21:24.744005 [32mIDE --> LS RESP window/workDoneProgress/create 3[0m
+12:21:24.744033 [92mIDE <-- LS NOTIF $/progress[0m
+12:21:24.744033 OUT Elapsed: 0s
+12:21:24.744742 [92mIDE <-- LS NOTIF $/progress[0m
+12:21:24.744742 OUT Elapsed: 0s
+12:21:24.822850 IN Elapsed: 79.3541ms
+12:21:24.822850 [91mIDE     LS <-- Clangd NOTIF $/progress[0m
+12:21:24.822850 [91m                            $/progress: backgroundIndexProgress REPORT, 0/1, 0.0%[0m
+12:21:24.822850 IN Elapsed: 0s
+12:21:24.822850 [91mIDE     LS <-- Clangd NOTIF $/progress[0m
+12:21:24.822850 [92mIDE <-- LS NOTIF $/progress[0m
+12:21:24.822850 [91m                            $/progress: backgroundIndexProgress END [0m
+12:21:24.822850 OUT Elapsed: 0s
+12:21:24.822850 [92mIDE <-- LS NOTIF $/progress[0m
+12:21:24.822850 OUT Elapsed: 0s
+12:21:34.728979 IN Elapsed: 9.9854136s
+12:21:34.730589 [92mIDE --> LS NOTIF ino/didCompleteBuild[0m
+12:21:34.731286 [92m                 ino/didCompleteBuild: [93mwrite-locked[0m[0m
+12:21:34.733876 [92m                 ino/didCompleteBuild: Updated 'libraries.cache'. Copied: C:\Users\рс\AppData\Local\arduino\sketches\DED8D48A9CC8B4B1794B2DD1B62EF77D\libraries.cache to C:\Users\рс\AppData\Local\Temp\arduino-language-server832218445\build\libraries.cache[0m
+12:21:34.733876 [92m                 ino/didCompleteBuild: [93mwrite-unlocked[0m[0m
+12:21:35.745867 [95mSKETCH REBUILD: : Sketch rebuild started[0m
+12:21:35.745867 [92mIDE <-- LS REQU window/workDoneProgress/create 4[0m
+12:21:35.746013 [95mSKETCH REBUILD: : [93mread-locked[0m[0m
+12:21:35.746013 [95mSKETCH REBUILD: : [93mread-unlocked[0m[0m
+12:21:35.746013 OUT Elapsed: 0s
+12:21:35.746473 IN Elapsed: 1.0125907s
+12:21:35.746473 [32mIDE --> LS RESP window/workDoneProgress/create 4[0m
+12:21:35.746473 [92mIDE <-- LS NOTIF $/progress[0m
+12:21:35.747032 OUT Elapsed: 559.1µs
+12:21:35.751829 [95mSKETCH REBUILD: : Running build with: {
+  "instance": {
+    "id": 1
+  },
+  "fqbn": "esp8266:esp8266:nodemcuv2:led=2,baud=115200,xtal=80,eesz=4M2M,dbg=Disabled,lvl=None____,ip=lm2f,vt=flash,exception=legacy,wipe=none,ssl=all",
+  "sketch_path": "D:\\ESP8266_GitHub\\TermoCloud\\TemoCloud",
+  "build_path": "C:\\Users\\рс\\AppData\\Local\\Temp\\arduino-language-server832218445\\build",
+  "verbose": true,
+  "create_compilation_database_only": true,
+  "source_override": {
+    "TemoCloud.ino": "/* 26апр25\r\nhttps://microkontroller.ru/esp8266-projects/podklyuchenie-datchika-temperatury-ds18b20-k-esp8266/\r\nПодключение датчика температуры DS18B20 к NodeMCU ESP8266\r\n*/\r\n\r\n#include \u003cOneWire.h\u003e\r\n#include \u003cDallasTemperature.h\u003e\r\n\r\n// GPIO where the DS18B20 is connected to\r\nconst int oneWireBus = 4;     \r\n\r\n// Setup a oneWire instance to communicate with any OneWire devices\r\nOneWire oneWire(oneWireBus);\r\n\r\n// Pass our oneWire reference to Dallas Temperature sensor \r\nDallasTemperature sensors(\u0026oneWire);\r\n\r\nvoid setup() {\r\n  // Start the Serial Monitor\r\n  Serial.begin(115200);\r\n  // Start the DS18B20 sensor\r\n  sensors.begin();\r\n}\r\n\r\nvoid loop() {\r\n  sensors.requestTemperatures(); \r\n  float temperatureC = sensors.getTempCByIndex(0);\r\n  float temperatureF = sensors.getTempFByIndex(0);\r\n  Serial.print(temperatureC);\r\n  Serial.println(\"ºC\");\r\n  Serial.print(temperatureF);\r\n  Serial.println(\"ºF\");\r\n  delay(5000);\r\n}"
+  },
+  "skip_libraries_discovery": true
+}[0m
+12:21:38.746357 [95mSKETCH REBUILD: : Compile successful![0m
+12:21:38.784927 [95mSKETCH REBUILD: : [93mwrite-locked[0m[0m
+12:21:38.785471   > Current sketchmapper content:
+12:21:38.785471   0: #include <Arduino.h>                                         | /not-ino:0                                         
+12:21:38.785471   1: #line 1 "D:\\ESP8266_GitHub\\TermoCloud\\TemoCloud\\TemoClou | /not-ino:0                                         
+12:21:38.785471   2: /* 26апр25                                                   | D:\ESP8266_GitHub\TermoCloud\TemoCloud\TemoCloud.ino:0                          
+12:21:38.785471   3: https://microkontroller.ru/esp8266-projects/podklyuchenie-da | D:\ESP8266_GitHub\TermoCloud\TemoCloud\TemoCloud.ino:1                          
+12:21:38.785471   4: Подключение датчика температуры                              | D:\ESP8266_GitHub\TermoCloud\TemoCloud\TemoCloud.ino:2                          
+12:21:38.785471   5: */                                                           | D:\ESP8266_GitHub\TermoCloud\TemoCloud\TemoCloud.ino:3                          
+12:21:38.785471   6:                                                              | D:\ESP8266_GitHub\TermoCloud\TemoCloud\TemoCloud.ino:4                          
+12:21:38.785471   7: #include <OneWire.h>                                         | D:\ESP8266_GitHub\TermoCloud\TemoCloud\TemoCloud.ino:5                          
+12:21:38.785471   8: #include <DallasTemperature.h>                               | D:\ESP8266_GitHub\TermoCloud\TemoCloud\TemoCloud.ino:6                          
+12:21:38.785471   9:                                                              | D:\ESP8266_GitHub\TermoCloud\TemoCloud\TemoCloud.ino:7                          
+12:21:38.785471  10: // GPIO where the DS18B20 is connected to                    | D:\ESP8266_GitHub\TermoCloud\TemoCloud\TemoCloud.ino:8                          
+12:21:38.785471  11: const int oneWireBus = 4;                                    | D:\ESP8266_GitHub\TermoCloud\TemoCloud\TemoCloud.ino:9                          
+12:21:38.785471  12:                                                              | D:\ESP8266_GitHub\TermoCloud\TemoCloud\TemoCloud.ino:10                          
+12:21:38.785471  13: // Setup a oneWire instance to communicate with any OneWire  | D:\ESP8266_GitHub\TermoCloud\TemoCloud\TemoCloud.ino:11                          
+12:21:38.785471  14: OneWire oneWire(oneWireBus);                                 | D:\ESP8266_GitHub\TermoCloud\TemoCloud\TemoCloud.ino:12                          
+12:21:38.785471  15:                                                              | D:\ESP8266_GitHub\TermoCloud\TemoCloud\TemoCloud.ino:13                          
+12:21:38.785471  16: // Pass our oneWire reference to Dallas Temperature sensor   | D:\ESP8266_GitHub\TermoCloud\TemoCloud\TemoCloud.ino:14                          
+12:21:38.785471  17: DallasTemperature sensors(&oneWire);                         | D:\ESP8266_GitHub\TermoCloud\TemoCloud\TemoCloud.ino:15                          
+12:21:38.785471  18:                                                              | D:\ESP8266_GitHub\TermoCloud\TemoCloud\TemoCloud.ino:16                          
+12:21:38.785471  19: #line 18 "D:\\ESP8266_GitHub\\TermoCloud\\TemoCloud\\TemoClo | /not-ino:0                                         
+12:21:38.785471  20: void setup();                                                | D:\ESP8266_GitHub\TermoCloud\TemoCloud\TemoCloud.ino:17 D:\ESP8266_GitHub\TermoCloud\TemoCloud\TemoCloud.ino:17
+12:21:38.785471  21: #line 25 "D:\\ESP8266_GitHub\\TermoCloud\\TemoCloud\\TemoClo | /not-ino:0                                         
+12:21:38.785471  22: void loop();                                                 | D:\ESP8266_GitHub\TermoCloud\TemoCloud\TemoCloud.ino:24 D:\ESP8266_GitHub\TermoCloud\TemoCloud\TemoCloud.ino:24
+12:21:38.785471  23: #line 18 "D:\\ESP8266_GitHub\\TermoCloud\\TemoCloud\\TemoClo | /not-ino:0                                         
+12:21:38.785471  24: void setup() {                                               | D:\ESP8266_GitHub\TermoCloud\TemoCloud\TemoCloud.ino:17                          
+12:21:38.785471  25:   // Start the Serial Monitor                                | D:\ESP8266_GitHub\TermoCloud\TemoCloud\TemoCloud.ino:18                          
+12:21:38.785471  26:   Serial.begin(115200);                                      | D:\ESP8266_GitHub\TermoCloud\TemoCloud\TemoCloud.ino:19                          
+12:21:38.785471  27:   // Start the DS18B20 sensor                                | D:\ESP8266_GitHub\TermoCloud\TemoCloud\TemoCloud.ino:20                          
+12:21:38.785471  28:   sensors.begin();                                           | D:\ESP8266_GitHub\TermoCloud\TemoCloud\TemoCloud.ino:21                          
+12:21:38.785471  29: }                                                            | D:\ESP8266_GitHub\TermoCloud\TemoCloud\TemoCloud.ino:22                          
+12:21:38.785471  30:                                                              | D:\ESP8266_GitHub\TermoCloud\TemoCloud\TemoCloud.ino:23                          
+12:21:38.785471  31: void loop() {                                                | D:\ESP8266_GitHub\TermoCloud\TemoCloud\TemoCloud.ino:24                          
+12:21:38.785471  32:   sensors.requestTemperatures();                             | D:\ESP8266_GitHub\TermoCloud\TemoCloud\TemoCloud.ino:25                          
+12:21:38.785471  33:   float temperatureC = sensors.getTempCByIndex(0);           | D:\ESP8266_GitHub\TermoCloud\TemoCloud\TemoCloud.ino:26                          
+12:21:38.785471  34:   float temperatureF = sensors.getTempFByIndex(0);           | D:\ESP8266_GitHub\TermoCloud\TemoCloud\TemoCloud.ino:27                          
+12:21:38.785471  35:   Serial.print(temperatureC);                                | D:\ESP8266_GitHub\TermoCloud\TemoCloud\TemoCloud.ino:28                          
+12:21:38.785471  36:   Serial.println("ºC");                                      | D:\ESP8266_GitHub\TermoCloud\TemoCloud\TemoCloud.ino:29                          
+12:21:38.785471  37:   Serial.print(temperatureF);                                | D:\ESP8266_GitHub\TermoCloud\TemoCloud\TemoCloud.ino:30                          
+12:21:38.785471  38:   Serial.println("ºF");                                      | D:\ESP8266_GitHub\TermoCloud\TemoCloud\TemoCloud.ino:31                          
+12:21:38.785471  39:   delay(5000);                                               | D:\ESP8266_GitHub\TermoCloud\TemoCloud\TemoCloud.ino:32                          
+12:21:38.785471  40: }                                                            | D:\ESP8266_GitHub\TermoCloud\TemoCloud\TemoCloud.ino:33                          
+12:21:38.785471  41:                                                              | D:\ESP8266_GitHub\TermoCloud\TemoCloud\TemoCloud.ino:34                          
+12:21:38.785471 [95mSKETCH REBUILD: : Sending 'didSave' notification to Clangd[0m
+12:21:38.785471 [91mIDE     LS --> Clangd NOTIF textDocument/didSave[0m
+12:21:38.786529 OUT Elapsed: 45.2µs
+12:21:38.786529 [95mSKETCH REBUILD: : Sending full-text 'didChange' notification to Clangd[0m
+12:21:38.786529 [91mIDE     LS --> Clangd NOTIF textDocument/didChange[0m
+12:21:38.786529 OUT Elapsed: 0s
+12:21:38.786529 [95mSKETCH REBUILD: : [93mwrite-unlocked[0m[0m
+12:21:38.786529 [92mIDE <-- LS NOTIF $/progress[0m
+12:21:38.786529 OUT Elapsed: 0s
+12:21:38.875390 IN Elapsed: 14.0524413s
+12:21:38.875390 [91mIDE     LS <-- Clangd REQU window/workDoneProgress/create 2[0m
+12:21:38.875390 [31mIDE     LS --> Clangd RESP window/workDoneProgress/create 2[0m
+12:21:38.875390 [92mIDE <-- LS REQU window/workDoneProgress/create 5[0m
+12:21:38.875390 OUT Elapsed: 0s
+12:21:38.875390 OUT Elapsed: 0s
+12:21:38.875390 IN Elapsed: 0s
+12:21:38.875390 [91mIDE     LS <-- Clangd NOTIF $/progress[0m
+12:21:38.875903 [91m                            $/progress: backgroundIndexProgress BEGIN indexing, 0.0%[0m
+12:21:38.875935 IN Elapsed: 0s
+12:21:38.875935 [91mIDE     LS <-- Clangd NOTIF $/progress[0m
+12:21:38.875935 [91m                            $/progress: backgroundIndexProgress REPORT, 0/1, 0.0%[0m
+12:21:38.875935 IN Elapsed: 3.1294401s
+12:21:38.875935 [32mIDE --> LS RESP window/workDoneProgress/create 5[0m
+12:21:38.875935 [92mIDE <-- LS NOTIF $/progress[0m
+12:21:38.875935 OUT Elapsed: 0s
+12:21:38.875935 [92mIDE <-- LS NOTIF $/progress[0m
+12:21:38.875935 OUT Elapsed: 0s
+12:21:38.937986 IN Elapsed: 62.0505ms
+12:21:38.937986 [91mIDE     LS <-- Clangd NOTIF $/progress[0m
+12:21:38.937986 [91m                            $/progress: backgroundIndexProgress REPORT, 0/1, 0.0%[0m
+12:21:38.937986 IN Elapsed: 0s
+12:21:38.937986 [91mIDE     LS <-- Clangd NOTIF $/progress[0m
+12:21:38.937986 [92mIDE <-- LS NOTIF $/progress[0m
+12:21:38.937986 [91m                            $/progress: backgroundIndexProgress END [0m
+12:21:38.937986 OUT Elapsed: 0s
+12:21:38.937986 [92mIDE <-- LS NOTIF $/progress[0m
+12:21:38.937986 OUT Elapsed: 0s
+12:21:55.149868 IN Elapsed: 16.273819s
+12:21:55.151935 [92mIDE --> LS NOTIF ino/didCompleteBuild[0m
+12:21:55.152478 [92m                 ino/didCompleteBuild: [93mwrite-locked[0m[0m
+12:21:55.160573 [92m                 ino/didCompleteBuild: Updated 'libraries.cache'. Copied: C:\Users\рс\AppData\Local\arduino\sketches\DED8D48A9CC8B4B1794B2DD1B62EF77D\libraries.cache to C:\Users\рс\AppData\Local\Temp\arduino-language-server832218445\build\libraries.cache[0m
+12:21:55.161302 [92m                 ino/didCompleteBuild: [93mwrite-unlocked[0m[0m
+12:21:56.163438 [95mSKETCH REBUILD: : Sketch rebuild started[0m
+12:21:56.163438 [92mIDE <-- LS REQU window/workDoneProgress/create 6[0m
+12:21:56.163438 [95mSKETCH REBUILD: : [93mread-locked[0m[0m
+12:21:56.163438 [95mSKETCH REBUILD: : [93mread-unlocked[0m[0m
+12:21:56.163438 OUT Elapsed: 0s
+12:21:56.164150 IN Elapsed: 1.0028403s
+12:21:56.164186 [32mIDE --> LS RESP window/workDoneProgress/create 6[0m
+12:21:56.164186 [92mIDE <-- LS NOTIF $/progress[0m
+12:21:56.164186 OUT Elapsed: 0s
+12:21:56.170320 [95mSKETCH REBUILD: : Running build with: {
+  "instance": {
+    "id": 1
+  },
+  "fqbn": "esp8266:esp8266:nodemcuv2:led=2,baud=115200,xtal=80,eesz=4M2M,dbg=Disabled,lvl=None____,ip=lm2f,vt=flash,exception=legacy,wipe=none,ssl=all",
+  "sketch_path": "D:\\ESP8266_GitHub\\TermoCloud\\TemoCloud",
+  "build_path": "C:\\Users\\рс\\AppData\\Local\\Temp\\arduino-language-server832218445\\build",
+  "verbose": true,
+  "create_compilation_database_only": true,
+  "source_override": {
+    "TemoCloud.ino": "/* 26апр25\r\nhttps://microkontroller.ru/esp8266-projects/podklyuchenie-datchika-temperatury-ds18b20-k-esp8266/\r\nПодключение датчика температуры DS18B20 к NodeMCU ESP8266\r\n*/\r\n\r\n#include \u003cOneWire.h\u003e\r\n#include \u003cDallasTemperature.h\u003e\r\n\r\n// GPIO where the DS18B20 is connected to\r\nconst int oneWireBus = 4;     \r\n\r\n// Setup a oneWire instance to communicate with any OneWire devices\r\nOneWire oneWire(oneWireBus);\r\n\r\n// Pass our oneWire reference to Dallas Temperature sensor \r\nDallasTemperature sensors(\u0026oneWire);\r\n\r\nvoid setup() {\r\n  // Start the Serial Monitor\r\n  Serial.begin(115200);\r\n  // Start the DS18B20 sensor\r\n  sensors.begin();\r\n}\r\n\r\nvoid loop() {\r\n  sensors.requestTemperatures(); \r\n  float temperatureC = sensors.getTempCByIndex(0);\r\n  float temperatureF = sensors.getTempFByIndex(0);\r\n  Serial.print(temperatureC);\r\n  Serial.println(\"ºC\");\r\n  Serial.print(temperatureF);\r\n  Serial.println(\"ºF\");\r\n  delay(5000);\r\n}"
+  },
+  "skip_libraries_discovery": true
+}[0m
+12:21:59.166946 [95mSKETCH REBUILD: : Compile successful![0m
+12:21:59.204845 [95mSKETCH REBUILD: : [93mwrite-locked[0m[0m
+12:21:59.205888   > Current sketchmapper content:
+12:21:59.205969   0: #include <Arduino.h>                                         | /not-ino:0                                         
+12:21:59.205969   1: #line 1 "D:\\ESP8266_GitHub\\TermoCloud\\TemoCloud\\TemoClou | /not-ino:0                                         
+12:21:59.205969   2: /* 26апр25                                                   | D:\ESP8266_GitHub\TermoCloud\TemoCloud\TemoCloud.ino:0                          
+12:21:59.205969   3: https://microkontroller.ru/esp8266-projects/podklyuchenie-da | D:\ESP8266_GitHub\TermoCloud\TemoCloud\TemoCloud.ino:1                          
+12:21:59.205969   4: Подключение датчика температуры                              | D:\ESP8266_GitHub\TermoCloud\TemoCloud\TemoCloud.ino:2                          
+12:21:59.205969   5: */                                                           | D:\ESP8266_GitHub\TermoCloud\TemoCloud\TemoCloud.ino:3                          
+12:21:59.205969   6:                                                              | D:\ESP8266_GitHub\TermoCloud\TemoCloud\TemoCloud.ino:4                          
+12:21:59.205969   7: #include <OneWire.h>                                         | D:\ESP8266_GitHub\TermoCloud\TemoCloud\TemoCloud.ino:5                          
+12:21:59.205969   8: #include <DallasTemperature.h>                               | D:\ESP8266_GitHub\TermoCloud\TemoCloud\TemoCloud.ino:6                          
+12:21:59.205969   9:                                                              | D:\ESP8266_GitHub\TermoCloud\TemoCloud\TemoCloud.ino:7                          
+12:21:59.205969  10: // GPIO where the DS18B20 is connected to                    | D:\ESP8266_GitHub\TermoCloud\TemoCloud\TemoCloud.ino:8                          
+12:21:59.205969  11: const int oneWireBus = 4;                                    | D:\ESP8266_GitHub\TermoCloud\TemoCloud\TemoCloud.ino:9                          
+12:21:59.205969  12:                                                              | D:\ESP8266_GitHub\TermoCloud\TemoCloud\TemoCloud.ino:10                          
+12:21:59.205969  13: // Setup a oneWire instance to communicate with any OneWire  | D:\ESP8266_GitHub\TermoCloud\TemoCloud\TemoCloud.ino:11                          
+12:21:59.205969  14: OneWire oneWire(oneWireBus);                                 | D:\ESP8266_GitHub\TermoCloud\TemoCloud\TemoCloud.ino:12                          
+12:21:59.205969  15:                                                              | D:\ESP8266_GitHub\TermoCloud\TemoCloud\TemoCloud.ino:13                          
+12:21:59.205969  16: // Pass our oneWire reference to Dallas Temperature sensor   | D:\ESP8266_GitHub\TermoCloud\TemoCloud\TemoCloud.ino:14                          
+12:21:59.205969  17: DallasTemperature sensors(&oneWire);                         | D:\ESP8266_GitHub\TermoCloud\TemoCloud\TemoCloud.ino:15                          
+12:21:59.205969  18:                                                              | D:\ESP8266_GitHub\TermoCloud\TemoCloud\TemoCloud.ino:16                          
+12:21:59.205969  19: #line 18 "D:\\ESP8266_GitHub\\TermoCloud\\TemoCloud\\TemoClo | /not-ino:0                                         
+12:21:59.205969  20: void setup();                                                | D:\ESP8266_GitHub\TermoCloud\TemoCloud\TemoCloud.ino:17 D:\ESP8266_GitHub\TermoCloud\TemoCloud\TemoCloud.ino:17
+12:21:59.205969  21: #line 25 "D:\\ESP8266_GitHub\\TermoCloud\\TemoCloud\\TemoClo | /not-ino:0                                         
+12:21:59.205969  22: void loop();                                                 | D:\ESP8266_GitHub\TermoCloud\TemoCloud\TemoCloud.ino:24 D:\ESP8266_GitHub\TermoCloud\TemoCloud\TemoCloud.ino:24
+12:21:59.205969  23: #line 18 "D:\\ESP8266_GitHub\\TermoCloud\\TemoCloud\\TemoClo | /not-ino:0                                         
+12:21:59.205969  24: void setup() {                                               | D:\ESP8266_GitHub\TermoCloud\TemoCloud\TemoCloud.ino:17                          
+12:21:59.205969  25:   // Start the Serial Monitor                                | D:\ESP8266_GitHub\TermoCloud\TemoCloud\TemoCloud.ino:18                          
+12:21:59.205969  26:   Serial.begin(115200);                                      | D:\ESP8266_GitHub\TermoCloud\TemoCloud\TemoCloud.ino:19                          
+12:21:59.205969  27:   // Start the DS18B20 sensor                                | D:\ESP8266_GitHub\TermoCloud\TemoCloud\TemoCloud.ino:20                          
+12:21:59.205969  28:   sensors.begin();                                           | D:\ESP8266_GitHub\TermoCloud\TemoCloud\TemoCloud.ino:21                          
+12:21:59.205969  29: }                                                            | D:\ESP8266_GitHub\TermoCloud\TemoCloud\TemoCloud.ino:22                          
+12:21:59.205969  30:                                                              | D:\ESP8266_GitHub\TermoCloud\TemoCloud\TemoCloud.ino:23                          
+12:21:59.205969  31: void loop() {                                                | D:\ESP8266_GitHub\TermoCloud\TemoCloud\TemoCloud.ino:24                          
+12:21:59.205969  32:   sensors.requestTemperatures();                             | D:\ESP8266_GitHub\TermoCloud\TemoCloud\TemoCloud.ino:25                          
+12:21:59.205969  33:   float temperatureC = sensors.getTempCByIndex(0);           | D:\ESP8266_GitHub\TermoCloud\TemoCloud\TemoCloud.ino:26                          
+12:21:59.205969  34:   float temperatureF = sensors.getTempFByIndex(0);           | D:\ESP8266_GitHub\TermoCloud\TemoCloud\TemoCloud.ino:27                          
+12:21:59.205969  35:   Serial.print(temperatureC);                                | D:\ESP8266_GitHub\TermoCloud\TemoCloud\TemoCloud.ino:28                          
+12:21:59.205969  36:   Serial.println("ºC");                                      | D:\ESP8266_GitHub\TermoCloud\TemoCloud\TemoCloud.ino:29                          
+12:21:59.205969  37:   Serial.print(temperatureF);                                | D:\ESP8266_GitHub\TermoCloud\TemoCloud\TemoCloud.ino:30                          
+12:21:59.205969  38:   Serial.println("ºF");                                      | D:\ESP8266_GitHub\TermoCloud\TemoCloud\TemoCloud.ino:31                          
+12:21:59.205969  39:   delay(5000);                                               | D:\ESP8266_GitHub\TermoCloud\TemoCloud\TemoCloud.ino:32                          
+12:21:59.205969  40: }                                                            | D:\ESP8266_GitHub\TermoCloud\TemoCloud\TemoCloud.ino:33                          
+12:21:59.205969  41:                                                              | D:\ESP8266_GitHub\TermoCloud\TemoCloud\TemoCloud.ino:34                          
+12:21:59.205969 [95mSKETCH REBUILD: : Sending 'didSave' notification to Clangd[0m
+12:21:59.206519 [91mIDE     LS --> Clangd NOTIF textDocument/didSave[0m
+12:21:59.206519 OUT Elapsed: 0s
+12:21:59.206519 [95mSKETCH REBUILD: : Sending full-text 'didChange' notification to Clangd[0m
+12:21:59.206519 [91mIDE     LS --> Clangd NOTIF textDocument/didChange[0m
+12:21:59.206519 OUT Elapsed: 0s
+12:21:59.206519 [95mSKETCH REBUILD: : [93mwrite-unlocked[0m[0m
+12:21:59.206519 [92mIDE <-- LS NOTIF $/progress[0m
+12:21:59.206519 OUT Elapsed: 0s
+12:21:59.285385 IN Elapsed: 20.3472561s
+12:21:59.292319 [91mIDE     LS <-- Clangd REQU window/workDoneProgress/create 3[0m
+12:21:59.292319 [31mIDE     LS --> Clangd RESP window/workDoneProgress/create 3[0m
+12:21:59.292319 [92mIDE <-- LS REQU window/workDoneProgress/create 7[0m
+12:21:59.292319 OUT Elapsed: 0s
+12:21:59.292319 OUT Elapsed: 0s
+12:21:59.292319 IN Elapsed: 0s
+12:21:59.292319 [91mIDE     LS <-- Clangd NOTIF $/progress[0m
+12:21:59.292319 [91m                            $/progress: backgroundIndexProgress BEGIN indexing, 0.0%[0m
+12:21:59.292319 IN Elapsed: 0s
+12:21:59.292319 [91mIDE     LS <-- Clangd NOTIF $/progress[0m
+12:21:59.292319 [91m                            $/progress: backgroundIndexProgress REPORT, 0/1, 0.0%[0m
+12:21:59.292863 IN Elapsed: 3.1286548s
+12:21:59.292863 [32mIDE --> LS RESP window/workDoneProgress/create 7[0m
+12:21:59.292863 [92mIDE <-- LS NOTIF $/progress[0m
+12:21:59.292863 OUT Elapsed: 0s
+12:21:59.293384 [92mIDE <-- LS NOTIF $/progress[0m
+12:21:59.293406 OUT Elapsed: 0s
+12:21:59.360098 IN Elapsed: 67.779ms
+12:21:59.360098 [91mIDE     LS <-- Clangd NOTIF $/progress[0m
+12:21:59.360098 [91m                            $/progress: backgroundIndexProgress REPORT, 0/1, 0.0%[0m
+12:21:59.360098 IN Elapsed: 0s
+12:21:59.360098 [91mIDE     LS <-- Clangd NOTIF $/progress[0m
+12:21:59.360098 [92mIDE <-- LS NOTIF $/progress[0m
+12:21:59.360098 [91m                            $/progress: backgroundIndexProgress END [0m
+12:21:59.360098 OUT Elapsed: 0s
+12:21:59.360098 [92mIDE <-- LS NOTIF $/progress[0m
+12:21:59.360098 OUT Elapsed: 0s
+12:22:47.209419 IN Elapsed: 47.9162206s
+12:22:47.209419 [92mIDE --> LS REQU textDocument/documentSymbol 3[0m
+12:22:47.209419 [92m                textDocument/documentSymbol 3: [93mread-locked[0m[0m
+12:22:47.209952 [92m                textDocument/documentSymbol 3: URI: file:///d%3A/ESP8266_GitHub/TermoCloud/TemoCloud/TemoCloud.ino -> file:///c%3A/Users/%D1%80%D1%81/AppData/Local/Temp/arduino-language-server832218445/build/sketch/TemoCloud.ino.cpp[0m
+12:22:47.210020 [91mIDE     LS --> Clangd REQU textDocument/documentSymbol 4[0m
+12:22:47.210020 OUT Elapsed: 0s
+12:22:47.212633 IN Elapsed: 47.8522s
+12:22:47.213164 [31mIDE     LS <-- Clangd RESP textDocument/documentSymbol 4[0m
+12:22:47.213164 [92m                textDocument/documentSymbol 3: file:///c%3A/Users/%D1%80%D1%81/AppData/Local/Temp/arduino-language-server832218445/build/sketch/TemoCloud.ino.cpp (7 document symbols)[0m
+12:22:47.213164 [92m                textDocument/documentSymbol 3:   > convert SymbolKind:Variable 11:0-11:24[0m
+12:22:47.214203 [92m                textDocument/documentSymbol 3: Range: file:///c%3A/Users/%D1%80%D1%81/AppData/Local/Temp/arduino-language-server832218445/build/sketch/TemoCloud.ino.cpp:11:0-11:24 -> file:///d%3A/ESP8266_GitHub/TermoCloud/TemoCloud/TemoCloud.ino:9:0-9:24 (.ino)[0m
+12:22:47.214722 [92m                textDocument/documentSymbol 3: Range: file:///c%3A/Users/%D1%80%D1%81/AppData/Local/Temp/arduino-language-server832218445/build/sketch/TemoCloud.ino.cpp:11:10-11:20 -> file:///d%3A/ESP8266_GitHub/TermoCloud/TemoCloud/TemoCloud.ino:9:10-9:20 (.ino)[0m
+12:22:47.214722 [92m                textDocument/documentSymbol 3: file:///c%3A/Users/%D1%80%D1%81/AppData/Local/Temp/arduino-language-server832218445/build/sketch/TemoCloud.ino.cpp (0 document symbols)[0m
+12:22:47.214722 [92m                textDocument/documentSymbol 3:   > convert SymbolKind:Variable 14:0-14:27[0m
+12:22:47.215754 [92m                textDocument/documentSymbol 3: Range: file:///c%3A/Users/%D1%80%D1%81/AppData/Local/Temp/arduino-language-server832218445/build/sketch/TemoCloud.ino.cpp:14:0-14:27 -> file:///d%3A/ESP8266_GitHub/TermoCloud/TemoCloud/TemoCloud.ino:12:0-12:27 (.ino)[0m
+12:22:47.216294 [92m                textDocument/documentSymbol 3: Range: file:///c%3A/Users/%D1%80%D1%81/AppData/Local/Temp/arduino-language-server832218445/build/sketch/TemoCloud.ino.cpp:14:8-14:15 -> file:///d%3A/ESP8266_GitHub/TermoCloud/TemoCloud/TemoCloud.ino:12:8-12:15 (.ino)[0m
+12:22:47.216294 [92m                textDocument/documentSymbol 3: file:///c%3A/Users/%D1%80%D1%81/AppData/Local/Temp/arduino-language-server832218445/build/sketch/TemoCloud.ino.cpp (0 document symbols)[0m
+12:22:47.216294 [92m                textDocument/documentSymbol 3:   > convert SymbolKind:Variable 17:0-17:35[0m
+12:22:47.217347 [92m                textDocument/documentSymbol 3: Range: file:///c%3A/Users/%D1%80%D1%81/AppData/Local/Temp/arduino-language-server832218445/build/sketch/TemoCloud.ino.cpp:17:0-17:35 -> file:///d%3A/ESP8266_GitHub/TermoCloud/TemoCloud/TemoCloud.ino:15:0-15:35 (.ino)[0m
+12:22:47.218400 [92m                textDocument/documentSymbol 3: Range: file:///c%3A/Users/%D1%80%D1%81/AppData/Local/Temp/arduino-language-server832218445/build/sketch/TemoCloud.ino.cpp:17:18-17:25 -> file:///d%3A/ESP8266_GitHub/TermoCloud/TemoCloud/TemoCloud.ino:15:18-15:25 (.ino)[0m
+12:22:47.218417 [92m                textDocument/documentSymbol 3: file:///c%3A/Users/%D1%80%D1%81/AppData/Local/Temp/arduino-language-server832218445/build/sketch/TemoCloud.ino.cpp (0 document symbols)[0m
+12:22:47.218417 [92m                textDocument/documentSymbol 3:   > convert SymbolKind:Function 20:0-20:12[0m
+12:22:47.218945 [92m                textDocument/documentSymbol 3: Range is in PREPROCESSED section of the sketch[0m
+12:22:47.218945 [92m                textDocument/documentSymbol 3: Range: file:///c%3A/Users/%D1%80%D1%81/AppData/Local/Temp/arduino-language-server832218445/build/sketch/TemoCloud.ino.cpp:20:0-20:12 -> file:///d%3A/ESP8266_GitHub/TermoCloud/TemoCloud/TemoCloud.ino:17:0-17:12 (.ino)[0m
+12:22:47.218945 [92m                textDocument/documentSymbol 3:     symbol is in the preprocessed section of the sketch.ino.cpp, skipping[0m
+12:22:47.218945 [92m                textDocument/documentSymbol 3:   > convert SymbolKind:Function 22:0-22:11[0m
+12:22:47.220004 [92m                textDocument/documentSymbol 3: Range is in PREPROCESSED section of the sketch[0m
+12:22:47.220004 [92m                textDocument/documentSymbol 3: Range: file:///c%3A/Users/%D1%80%D1%81/AppData/Local/Temp/arduino-language-server832218445/build/sketch/TemoCloud.ino.cpp:22:0-22:11 -> file:///d%3A/ESP8266_GitHub/TermoCloud/TemoCloud/TemoCloud.ino:24:0-24:11 (.ino)[0m
+12:22:47.220004 [92m                textDocument/documentSymbol 3:     symbol is in the preprocessed section of the sketch.ino.cpp, skipping[0m
+12:22:47.220004 [92m                textDocument/documentSymbol 3:   > convert SymbolKind:Function 24:0-29:1[0m
+12:22:47.220535 [92m                textDocument/documentSymbol 3: Range: file:///c%3A/Users/%D1%80%D1%81/AppData/Local/Temp/arduino-language-server832218445/build/sketch/TemoCloud.ino.cpp:24:0-29:1 -> file:///d%3A/ESP8266_GitHub/TermoCloud/TemoCloud/TemoCloud.ino:17:0-22:1 (.ino)[0m
+12:22:47.221594 [92m                textDocument/documentSymbol 3: Range: file:///c%3A/Users/%D1%80%D1%81/AppData/Local/Temp/arduino-language-server832218445/build/sketch/TemoCloud.ino.cpp:24:5-24:10 -> file:///d%3A/ESP8266_GitHub/TermoCloud/TemoCloud/TemoCloud.ino:17:5-17:10 (.ino)[0m
+12:22:47.221594 [92m                textDocument/documentSymbol 3: file:///c%3A/Users/%D1%80%D1%81/AppData/Local/Temp/arduino-language-server832218445/build/sketch/TemoCloud.ino.cpp (0 document symbols)[0m
+12:22:47.221594 [92m                textDocument/documentSymbol 3:   > convert SymbolKind:Function 31:0-40:1[0m
+12:22:47.222121 [92m                textDocument/documentSymbol 3: Range: file:///c%3A/Users/%D1%80%D1%81/AppData/Local/Temp/arduino-language-server832218445/build/sketch/TemoCloud.ino.cpp:31:0-40:1 -> file:///d%3A/ESP8266_GitHub/TermoCloud/TemoCloud/TemoCloud.ino:24:0-33:1 (.ino)[0m
+12:22:47.223161 [92m                textDocument/documentSymbol 3: Range: file:///c%3A/Users/%D1%80%D1%81/AppData/Local/Temp/arduino-language-server832218445/build/sketch/TemoCloud.ino.cpp:31:5-31:9 -> file:///d%3A/ESP8266_GitHub/TermoCloud/TemoCloud/TemoCloud.ino:24:5-24:9 (.ino)[0m
+12:22:47.223177 [92m                textDocument/documentSymbol 3: file:///c%3A/Users/%D1%80%D1%81/AppData/Local/Temp/arduino-language-server832218445/build/sketch/TemoCloud.ino.cpp (0 document symbols)[0m
+12:22:47.223177 [92m                textDocument/documentSymbol 3: [93mread-unlocked[0m[0m
+12:22:47.223177 [32mIDE <-- LS RESP textDocument/documentSymbol 3[0m
+12:22:47.223177 OUT Elapsed: 0s
+12:22:48.161967 IN Elapsed: 938.783ms
+12:22:48.161967 [92mIDE --> LS REQU textDocument/hover 4[0m
+12:22:48.161967 [92m                textDocument/hover 4: [93mread-locked[0m[0m
+12:22:48.161967 [92m                textDocument/hover 4: URI: file:///d%3A/ESP8266_GitHub/TermoCloud/TemoCloud/TemoCloud.ino -> file:///c%3A/Users/%D1%80%D1%81/AppData/Local/Temp/arduino-language-server832218445/build/sketch/TemoCloud.ino.cpp[0m
+12:22:48.164067 [92m                textDocument/hover 4: file:///d%3A/ESP8266_GitHub/TermoCloud/TemoCloud/TemoCloud.ino:25:30 -> file:///c%3A/Users/%D1%80%D1%81/AppData/Local/Temp/arduino-language-server832218445/build/sketch/TemoCloud.ino.cpp:32:30[0m
+12:22:48.164067 [91mIDE     LS --> Clangd REQU textDocument/hover 5[0m
+12:22:48.164067 OUT Elapsed: 0s
+12:22:48.168767 IN Elapsed: 955.5963ms
+12:22:48.168767 [31mIDE     LS <-- Clangd RESP textDocument/hover 5[0m
+12:22:48.170348 [92m                textDocument/hover 4: Range: file:///c%3A/Users/%D1%80%D1%81/AppData/Local/Temp/arduino-language-server832218445/build/sketch/TemoCloud.ino.cpp:32:30-32:31 -> file:///d%3A/ESP8266_GitHub/TermoCloud/TemoCloud/TemoCloud.ino:25:30-25:31 (.ino)[0m
+12:22:48.170348 [92m                textDocument/hover 4: Hover content: "### instance-method `requestTemperatures`  \n\n---\n→ `struct DallasTemperature::request_t`  \nTemperature Operations  \n\n---\n```cpp\n// In DallasTemperature\npublic: DallasTemperature::request_t requestTemperatures()\n```"[0m
+12:22:48.170348 [92m                textDocument/hover 4: [93mread-unlocked[0m[0m
+12:22:48.170348 [32mIDE <-- LS RESP textDocument/hover 4[0m
+12:22:48.170348 OUT Elapsed: 0s
+12:22:48.827071 IN Elapsed: 656.7188ms
+12:22:48.827071 [92mIDE --> LS REQU textDocument/hover 5[0m
+12:22:48.827071 [92m                textDocument/hover 5: [93mread-locked[0m[0m
+12:22:48.827638 [92m                textDocument/hover 5: URI: file:///d%3A/ESP8266_GitHub/TermoCloud/TemoCloud/TemoCloud.ino -> file:///c%3A/Users/%D1%80%D1%81/AppData/Local/Temp/arduino-language-server832218445/build/sketch/TemoCloud.ino.cpp[0m
+12:22:48.830259 [92m                textDocument/hover 5: file:///d%3A/ESP8266_GitHub/TermoCloud/TemoCloud/TemoCloud.ino:25:32 -> file:///c%3A/Users/%D1%80%D1%81/AppData/Local/Temp/arduino-language-server832218445/build/sketch/TemoCloud.ino.cpp:32:32[0m
+12:22:48.830259 [91mIDE     LS --> Clangd REQU textDocument/hover 6[0m
+12:22:48.830787 OUT Elapsed: 19.9µs
+12:22:48.832878 IN Elapsed: 664.1058ms
+12:22:48.832878 [31mIDE     LS <-- Clangd RESP textDocument/hover 6[0m
+12:22:48.832878 [92m                textDocument/hover 5: null response[0m
+12:22:48.832878 [92m                textDocument/hover 5: [93mread-unlocked[0m[0m
+12:22:48.832878 [32mIDE <-- LS RESP textDocument/hover 5[0m
+12:22:48.832878 OUT Elapsed: 0s
