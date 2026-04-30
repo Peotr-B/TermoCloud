@@ -1,8 +1,4 @@
-/* 
-ВАЖНО!
-В ArduinoIDE выбирать плату NodeMCU 1.0 (ESP-12E Module)
-
-26апр25
+/* 26апр25
 https://microkontroller.ru/esp8266-projects/podklyuchenie-datchika-temperatury-ds18b20-k-esp8266/
 Подключение датчика температуры DS18B20 к NodeMCU ESP8266 и Google Firebase
 */
